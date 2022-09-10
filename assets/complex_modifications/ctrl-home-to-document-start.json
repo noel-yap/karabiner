@@ -1,0 +1,45 @@
+{
+  "title": "Ctrl+Home mapped to document start",
+  "rules": [
+    {
+      "description": "Ctrl+Home goes to document start",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "home",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": ["command"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Shift+Ctrl+Home goes to select to document start",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "home",
+            "modifiers": {
+              "mandatory": ["shift", "control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": ["shift", "command"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

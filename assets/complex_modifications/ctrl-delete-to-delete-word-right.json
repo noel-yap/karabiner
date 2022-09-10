@@ -2,33 +2,13 @@
   "title": "Ctrl+Delete mapped to delete word right",
   "rules": [
     {
-      "description": "LeftCtrl+Delete deletes word right",
+      "description": "Ctrl+Delete deletes word right",
       "manipulators": [
         {
           "from": {
             "key_code": "delete_forward",
             "modifiers": {
-              "mandatory": ["left_control"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": ["option", "fn"]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "RightCtrl+Delete deletes word right",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "delete_forward",
-            "modifiers": {
-              "mandatory": ["right_control"]
+              "mandatory": ["control"]
             }
           },
           "to": [

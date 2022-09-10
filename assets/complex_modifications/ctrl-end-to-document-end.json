@@ -1,0 +1,45 @@
+{
+  "title": "Ctrl+End mapped to document start",
+  "rules": [
+    {
+      "description": "Ctrl+End goes to document end",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "end",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": ["command"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Shift+Ctrl+End goes to select to document end",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "end",
+            "modifiers": {
+              "mandatory": ["shift", "control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": ["shift", "command"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

@@ -2,33 +2,13 @@
   "title": "Ctrl+Backspace mapped to delete word left",
   "rules": [
     {
-      "description": "LeftCtrl+Backspace deletes word left",
+      "description": "Ctrl+Backspace deletes word left",
       "manipulators": [
         {
           "from": {
             "key_code": "delete_or_backspace",
             "modifiers": {
-              "mandatory": ["left_control"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": ["option"]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "RightCtrl+Backspace deletes word left",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "delete_or_backspace",
-            "modifiers": {
-              "mandatory": ["right_control"]
+              "mandatory": ["control"]
             }
           },
           "to": [

@@ -2,19 +2,123 @@
   "title": "Word-related mappings",
   "rules": [
     {
+      "description": "Ctrl+Left moves cursor one word left",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Shift+Ctrl+Left selects one word left",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "shift",
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "shift",
+                "option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+Right moves cursor one word right",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Shift+Ctrl+Right selects one word right",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "shift",
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "shift",
+                "option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Ctrl+Backspace deletes word left",
       "manipulators": [
         {
           "from": {
             "key_code": "delete_or_backspace",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "delete_or_backspace",
-              "modifiers": ["option"]
+              "modifiers": [
+                "option"
+              ]
             }
           ],
           "type": "basic"
@@ -28,13 +132,18 @@
           "from": {
             "key_code": "delete_forward",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "delete_or_backspace",
-              "modifiers": ["option", "fn"]
+              "modifiers": [
+                "option",
+                "fn"
+              ]
             }
           ],
           "type": "basic"

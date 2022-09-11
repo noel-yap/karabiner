@@ -8,13 +8,17 @@
           "from": {
             "key_code": "z",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "z",
-              "modifiers": ["command"]
+              "modifiers": [
+                "command"
+              ]
             }
           ],
           "type": "basic"
@@ -28,13 +32,17 @@
           "from": {
             "key_code": "x",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "x",
-              "modifiers": ["command"]
+              "modifiers": [
+                "command"
+              ]
             }
           ],
           "type": "basic"
@@ -48,13 +56,17 @@
           "from": {
             "key_code": "c",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "c",
-              "modifiers": ["command"]
+              "modifiers": [
+                "command"
+              ]
             }
           ],
           "type": "basic"
@@ -68,13 +80,17 @@
           "from": {
             "key_code": "v",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "v",
-              "modifiers": ["command"]
+              "modifiers": [
+                "command"
+              ]
             }
           ],
           "type": "basic"
@@ -88,13 +104,17 @@
           "from": {
             "key_code": "y",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "delete_or_backspace",
-              "modifiers": ["command"]
+              "modifiers": [
+                "command"
+              ]
             }
           ],
           "type": "basic"

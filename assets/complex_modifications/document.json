@@ -8,13 +8,17 @@
           "from": {
             "key_code": "home",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "up_arrow",
-              "modifiers": ["command"]
+              "modifiers": [
+                "command"
+              ]
             }
           ],
           "type": "basic"
@@ -22,19 +26,25 @@
       ]
     },
     {
-      "description": "Shift+Ctrl+Home goes to select to document start",
+      "description": "Shift+Ctrl+Home selects to document start",
       "manipulators": [
         {
           "from": {
             "key_code": "home",
             "modifiers": {
-              "mandatory": ["shift", "control"]
+              "mandatory": [
+                "shift",
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "up_arrow",
-              "modifiers": ["shift", "command"]
+              "modifiers": [
+                "shift",
+                "command"
+              ]
             }
           ],
           "type": "basic"
@@ -48,13 +58,17 @@
           "from": {
             "key_code": "end",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": [
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "down_arrow",
-              "modifiers": ["command"]
+              "modifiers": [
+                "command"
+              ]
             }
           ],
           "type": "basic"
@@ -62,19 +76,25 @@
       ]
     },
     {
-      "description": "Shift+Ctrl+End goes to select to document end",
+      "description": "Shift+Ctrl+End selects to document end",
       "manipulators": [
         {
           "from": {
             "key_code": "end",
             "modifiers": {
-              "mandatory": ["shift", "control"]
+              "mandatory": [
+                "shift",
+                "control"
+              ]
             }
           },
           "to": [
             {
               "key_code": "down_arrow",
-              "modifiers": ["shift", "command"]
+              "modifiers": [
+                "shift",
+                "command"
+              ]
             }
           ],
           "type": "basic"

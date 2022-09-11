@@ -1,20 +1,20 @@
 {
-  "title": "Ctrl+Home mapped to document start",
+  "title": "Word-related mappings",
   "rules": [
     {
-      "description": "Ctrl+Home goes to document start",
+      "description": "Ctrl+Backspace deletes word left",
       "manipulators": [
         {
           "from": {
-            "key_code": "home",
+            "key_code": "delete_or_backspace",
             "modifiers": {
               "mandatory": ["control"]
             }
           },
           "to": [
             {
-              "key_code": "up_arrow",
-              "modifiers": ["command"]
+              "key_code": "delete_or_backspace",
+              "modifiers": ["option"]
             }
           ],
           "type": "basic"
@@ -22,19 +22,19 @@
       ]
     },
     {
-      "description": "Shift+Ctrl+Home goes to select to document start",
+      "description": "Ctrl+Delete deletes word right",
       "manipulators": [
         {
           "from": {
-            "key_code": "home",
+            "key_code": "delete_forward",
             "modifiers": {
-              "mandatory": ["shift", "control"]
+              "mandatory": ["control"]
             }
           },
           "to": [
             {
-              "key_code": "up_arrow",
-              "modifiers": ["shift", "command"]
+              "key_code": "delete_or_backspace",
+              "modifiers": ["option", "fn"]
             }
           ],
           "type": "basic"

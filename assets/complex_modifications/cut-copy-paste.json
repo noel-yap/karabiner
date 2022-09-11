@@ -1,5 +1,5 @@
 {
-  "title": "Unix cut, copy, and paste mapped to map equivalents",
+  "title": "Cut, copy, paste, undo, and yank",
   "rules": [
     {
       "description": "Ctrl+z undoes",

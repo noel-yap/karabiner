@@ -2,14 +2,17 @@
   "title": "Word-related mappings",
   "rules": [
     {
-      "description": "Ctrl+Left moves cursor one word left",
+      "description": "Cmd+Left moves cursor one word left",
       "manipulators": [
         {
           "from": {
             "key_code": "left_arrow",
             "modifiers": {
               "mandatory": [
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -26,7 +29,7 @@
       ]
     },
     {
-      "description": "Shift+Ctrl+Left selects one word left",
+      "description": "Shift+Cmd+Left selects one word left",
       "manipulators": [
         {
           "from": {
@@ -34,7 +37,10 @@
             "modifiers": {
               "mandatory": [
                 "shift",
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -52,14 +58,17 @@
       ]
     },
     {
-      "description": "Ctrl+Right moves cursor one word right",
+      "description": "Cmd+Right moves cursor one word right",
       "manipulators": [
         {
           "from": {
             "key_code": "right_arrow",
             "modifiers": {
               "mandatory": [
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -76,7 +85,7 @@
       ]
     },
     {
-      "description": "Shift+Ctrl+Right selects one word right",
+      "description": "Shift+Cmd+Right selects one word right",
       "manipulators": [
         {
           "from": {
@@ -84,7 +93,10 @@
             "modifiers": {
               "mandatory": [
                 "shift",
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -102,14 +114,17 @@
       ]
     },
     {
-      "description": "Ctrl+Backspace deletes word left",
+      "description": "Cmd+Backspace deletes word left",
       "manipulators": [
         {
           "from": {
             "key_code": "delete_or_backspace",
             "modifiers": {
               "mandatory": [
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -126,14 +141,17 @@
       ]
     },
     {
-      "description": "Ctrl+Delete deletes word right",
+      "description": "Cmd+Delete deletes word right",
       "manipulators": [
         {
           "from": {
             "key_code": "delete_forward",
             "modifiers": {
               "mandatory": [
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

@@ -2,14 +2,17 @@
   "title": "Document-related mappings",
   "rules": [
     {
-      "description": "Ctrl+Home goes to document start",
+      "description": "Cmd+Home goes to document start",
       "manipulators": [
         {
           "from": {
             "key_code": "home",
             "modifiers": {
               "mandatory": [
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -26,7 +29,7 @@
       ]
     },
     {
-      "description": "Shift+Ctrl+Home selects to document start",
+      "description": "Shift+Cmd+Home selects to document start",
       "manipulators": [
         {
           "from": {
@@ -34,7 +37,10 @@
             "modifiers": {
               "mandatory": [
                 "shift",
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -52,14 +58,17 @@
       ]
     },
     {
-      "description": "Ctrl+End goes to document end",
+      "description": "Cmd+End goes to document end",
       "manipulators": [
         {
           "from": {
             "key_code": "end",
             "modifiers": {
               "mandatory": [
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -76,7 +85,7 @@
       ]
     },
     {
-      "description": "Shift+Ctrl+End selects to document end",
+      "description": "Shift+Cmd+End selects to document end",
       "manipulators": [
         {
           "from": {
@@ -84,7 +93,10 @@
             "modifiers": {
               "mandatory": [
                 "shift",
-                "control"
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

@@ -5,6 +5,7 @@
       "description": "Cmd+Home to Cmd+Up: Move to document start",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "home",
             "modifiers": {
@@ -23,8 +24,7 @@
                 "command"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
@@ -32,6 +32,7 @@
       "description": "Shift+Cmd+Home to Shift+Cmd+Up: Select to document start",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "home",
             "modifiers": {
@@ -52,8 +53,7 @@
                 "command"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
@@ -61,6 +61,7 @@
       "description": "Cmd+End to Cmd+Down: Move to document end",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "end",
             "modifiers": {
@@ -79,8 +80,7 @@
                 "command"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
@@ -88,6 +88,7 @@
       "description": "Shift+Cmd+End to Shift+Cmd+Down: Select to document end",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "end",
             "modifiers": {
@@ -108,8 +109,7 @@
                 "command"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     }

@@ -394,6 +394,60 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Cmd+PgUp to Cmd+F19",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f19",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+PgDn to Cmd+F13",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f13",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -465,26 +519,6 @@
                             "to": [
                                 {
                                     "key_code": "left_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "page_down"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f13"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "page_up"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f19"
                                 }
                             ]
                         },

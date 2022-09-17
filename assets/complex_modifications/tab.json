@@ -1,0 +1,59 @@
+{
+  "title": "Tab-related mappings",
+  "rules": [
+    {
+      "description": "Cmd+PgUp to Cmd+F19",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_up",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f19",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+PgDn to Cmd+F13",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_down",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f13",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

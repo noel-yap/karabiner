@@ -117,6 +117,7 @@
       "description": "Cmd+Bksp to Opt+Bksp: Delete to word start",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "delete_or_backspace",
             "modifiers": {
@@ -135,8 +136,7 @@
                 "option"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
@@ -144,6 +144,7 @@
       "description": "Cmd+Del to Opt+Fn+Bksp: Delete to word end",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "delete_forward",
             "modifiers": {
@@ -163,8 +164,7 @@
                 "fn"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     }

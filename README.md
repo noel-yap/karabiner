@@ -1,4 +1,4 @@
-# karabiner
+# karabiner config
 
 ## About
 
@@ -8,6 +8,10 @@
 * <kbd>left_control</kbd> → <kbd>left_command</kbd>
 * <kbd>right_control</kbd> → <kbd>right_command</kbd>
 * <kbd>keypad_enter</kbd> → <kbd>return_or_enter</kbd>
+
+### `edit.json`
+
+* <kbd>MouseButton3</kbd> pastes
 
 ### `line.json`
 

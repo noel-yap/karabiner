@@ -1,15 +1,38 @@
 {
-  "title": "Document-related mappings",
+  "title": "Line-related mappings",
   "rules": [
     {
-      "description": "Cmd+Home to Cmd+Up: Move to document start",
+      "description": "Home to Cmd+Left: Move to line start",
       "manipulators": [
         {
+          "type": "basic",
+          "from": {
+            "key_code": "home",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": "command"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift+Home to Shift+Cmd+Left: Select to line start",
+      "manipulators": [
+        {
+          "type": "basic",
           "from": {
             "key_code": "home",
             "modifiers": {
               "mandatory": [
-                "command"
+                "shift"
               ],
               "optional": [
                 "caps_lock"
@@ -18,27 +41,24 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "modifiers": [
+                "shift",
                 "command"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
     {
-      "description": "Shift+Cmd+Home to Shift+Cmd+Up: Select to document start",
+      "description": "End to Cmd+Right: Move to line end",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
-            "key_code": "home",
+            "key_code": "end",
             "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
               "optional": [
                 "caps_lock"
               ]
@@ -46,26 +66,23 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "shift",
-                "command"
-              ]
+              "key_code": "right_arrow",
+              "modifiers": "command"
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
     {
-      "description": "Cmd+End to Cmd+Down: Move to document end",
+      "description": "Shift+End to Shift+Cmd+Right: Select to line end",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "end",
             "modifiers": {
               "mandatory": [
-                "command"
+                "shift"
               ],
               "optional": [
                 "caps_lock"
@@ -74,42 +91,13 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Shift+Cmd+End to Shift+Cmd+Down: Select to document end",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "end",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "modifiers": [
                 "shift",
                 "command"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     }

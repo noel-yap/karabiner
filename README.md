@@ -2,27 +2,36 @@
 
 ## About
 
-### `cut-copy-paste.json`
+### Keyboard 4000
 
-* `Ctrl`+`z` undoes
-* `Ctrl`+`x` cuts
-* `Ctrl`+`c` copies
-* `Ctrl`+`v` pastes
-* `Ctrl`+`y` deletes line
+* <kbd>left_command</kbd> → <kbd>left_control</kbd>
+* <kbd>left_control</kbd> → <kbd>left_command</kbd>
+* <kbd>right_control</kbd> → <kbd>right_command</kbd>
+* <kbd>insert</kbd> → <kbd>f10</kbd>
+* <kbd>page_up</kbd> → <kbd>f19</kbd>
+* <kbd>page_down</kbd> → <kbd>f13</kbd>
+* <kbd>keypad_enter</kbd> → <kbd>return_or_enter</kbd>
 
 ### `document.json`
 
-* `Ctrl`+`Home` goes to document start
-* `Shift`+`Ctrl`+`Home` selects to document start
-* `Ctrl`+`End` goes to document end
-* `Shift`+`Ctrl`+`End` selects to document end
+* <kbd>Ctrl</kbd><kbd>Home</kbd> moves to document start
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Home</kbd> selects to document start
+* <kbd>Ctrl</kbd><kbd>End</kbd> moves to document end
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>End</kbd> selects to document end
+
+### `line.json`
+
+* <kbd>Home</kbd> moves to line start
+* <kbd>Shift</kbd><kbd>Home</kbd> selects to line start
+* <kbd>End</kbd> moves to line end
+* <kbd>Shift</kbd><kbd>End</kbd> selects to line end
 
 ### `word.json`
 
-* `Ctrl`+`Left` moves cursor one word left
-* `Shift`+`Ctrl`+`Left` selects one word left
-* `Ctrl`+`Right` moves cursor one word right
-* `Shift`+`Ctrl`+`Right` selects one word right
+* <kbd>Ctrl</kbd><kbd>Left</kbd> moves to word start
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Left</kbd> selects to word start
+* <kbd>Ctrl</kbd><kbd>Right</kbd> moves to word end
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Right</kbd> selects to word end
 
 ## Install
 

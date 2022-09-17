@@ -2,9 +2,10 @@
   "title": "Word-related mappings",
   "rules": [
     {
-      "description": "Cmd+Left moves cursor one word left",
+      "description": "Cmd+Left to Opt+Left: Move to word start",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "left_arrow",
             "modifiers": {
@@ -23,15 +24,15 @@
                 "option"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
     {
-      "description": "Shift+Cmd+Left selects one word left",
+      "description": "Shift+Cmd+Left to Shift+Opt+Left: Select to word start",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "left_arrow",
             "modifiers": {
@@ -52,15 +53,15 @@
                 "option"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
     {
-      "description": "Cmd+Right moves cursor one word right",
+      "description": "Cmd+Right to Opt+Right: Move to word end",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "right_arrow",
             "modifiers": {
@@ -79,15 +80,15 @@
                 "option"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
     {
-      "description": "Shift+Cmd+Right selects one word right",
+      "description": "Shift+Cmd+Right to Shift+Opt+Right: Select to word end",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "right_arrow",
             "modifiers": {
@@ -108,13 +109,12 @@
                 "option"
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     },
     {
-      "description": "Cmd+Backspace deletes word left",
+      "description": "Cmd+Bksp to Opt+Bksp: Delete to word start",
       "manipulators": [
         {
           "from": {
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "description": "Cmd+Delete deletes word right",
+      "description": "Cmd+Del to Opt+Fn+Bksp: Delete to word end",
       "manipulators": [
         {
           "from": {

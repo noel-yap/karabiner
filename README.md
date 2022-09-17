@@ -10,12 +10,12 @@
 * <kbd>insert</kbd> → <kbd>f10</kbd>
 * <kbd>keypad_enter</kbd> → <kbd>return_or_enter</kbd>
 
-### `document.json`
+### `word.json`
 
-* <kbd>Ctrl</kbd><kbd>Home</kbd> moves to document start
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Home</kbd> selects to document start
-* <kbd>Ctrl</kbd><kbd>End</kbd> moves to document end
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>End</kbd> selects to document end
+* <kbd>Ctrl</kbd><kbd>Left</kbd> moves to word start
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Left</kbd> selects to word start
+* <kbd>Ctrl</kbd><kbd>Right</kbd> moves to word end
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Right</kbd> selects to word end
 
 ### `line.json`
 
@@ -24,12 +24,27 @@
 * <kbd>End</kbd> moves to line end
 * <kbd>Shift</kbd><kbd>End</kbd> selects to line end
 
-### `word.json`
+### `paragraph.json`
 
-* <kbd>Ctrl</kbd><kbd>Left</kbd> moves to word start
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Left</kbd> selects to word start
-* <kbd>Ctrl</kbd><kbd>Right</kbd> moves to word end
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Right</kbd> selects to word end
+* <kbd>Ctrl</kbd><kbd>Up</kbd> moves to paragraph start
+* <kbd>Ctrl</kbd><kbd>Down</kbd> moves to paragraph end
+
+### `tab.json`
+
+* <kbd>Ctrl</kbd><kbd>PgUp</kbd> moves to previous tab
+* <kbd>Ctrl</kbd><kbd>PgDn</kbd> moves to next tab
+
+### `window.json`
+
+* <kbd>Window</kbd><kbd>PgUp</kbd> moves to previous window
+* <kbd>Window</kbd><kbd>PgDn</kbd> moves to next window
+
+### `document.json`
+
+* <kbd>Ctrl</kbd><kbd>Home</kbd> moves to document start
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Home</kbd> selects to document start
+* <kbd>Ctrl</kbd><kbd>End</kbd> moves to document end
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>End</kbd> selects to document end
 
 ## Install
 

@@ -2,10 +2,16 @@
   "title": "Tab-related mappings",
   "rules": [
     {
-      "description": "Cmd+PgUp to Cmd+F19",
+      "description": "Cmd+PgUp to Ctrl+PgUp",
       "manipulators": [
         {
           "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.google\\.Chrome$"]
+            }
+          ],
           "from": {
             "key_code": "page_up",
             "modifiers": {
@@ -19,9 +25,9 @@
           },
           "to": [
             {
-              "key_code": "f19",
+              "key_code": "page_up",
               "modifiers": [
-                "command"
+                "control"
               ]
             }
           ]
@@ -29,10 +35,16 @@
       ]
     },
     {
-      "description": "Cmd+PgDn to Cmd+F13",
+      "description": "Cmd+PgDn to Ctrl+PgDn",
       "manipulators": [
         {
           "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.google\\.Chrome$"]
+            }
+          ],
           "from": {
             "key_code": "page_down",
             "modifiers": {
@@ -46,9 +58,9 @@
           },
           "to": [
             {
-              "key_code": "f13",
+              "key_code": "page_down",
               "modifiers": [
-                "command"
+                "control"
               ]
             }
           ]

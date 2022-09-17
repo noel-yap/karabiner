@@ -51,11 +51,6 @@
 * <kbd>⌃</kbd><kbd>⇞</kbd> moves to previous tab
 * <kbd>⌃</kbd><kbd>⇟</kbd> moves to next tab
 
-### `window.json`
-
-* <kbd>⊞</kbd><kbd>⇞</kbd> moves to previous window
-* <kbd>⊞</kbd><kbd>⇟</kbd> moves to next window
-
 ### `word.json`
 
 * <kbd>⌃</kbd><kbd>←</kbd> moves to word start

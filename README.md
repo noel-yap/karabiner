@@ -29,6 +29,20 @@
 * <kbd>Ctrl</kbd><kbd>Up</kbd> moves to paragraph start
 * <kbd>Ctrl</kbd><kbd>Down</kbd> moves to paragraph end
 
+### `document.json`
+
+* <kbd>Ctrl</kbd><kbd>Home</kbd> moves to document start
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Home</kbd> selects to document start
+* <kbd>Ctrl</kbd><kbd>End</kbd> moves to document end
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>End</kbd> selects to document end
+
+### `pane.json`
+
+* <kbd>Alt</kbd><kbd>Left</kbd> moves to previous pane or pane aleft
+* <kbd>Alt</kbd><kbd>Up</kbd> moves to previous pane or pane above
+* <kbd>Alt</kbd><kbd>Right</kbd> moves to next pane or pane aright
+* <kbd>Alt</kbd><kbd>Down</kbd> moves to next pane or pane below
+
 ### `tab.json`
 
 * <kbd>Ctrl</kbd><kbd>PgUp</kbd> moves to previous tab
@@ -38,13 +52,6 @@
 
 * <kbd>Window</kbd><kbd>PgUp</kbd> moves to previous window
 * <kbd>Window</kbd><kbd>PgDn</kbd> moves to next window
-
-### `document.json`
-
-* <kbd>Ctrl</kbd><kbd>Home</kbd> moves to document start
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Home</kbd> selects to document start
-* <kbd>Ctrl</kbd><kbd>End</kbd> moves to document end
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>End</kbd> selects to document end
 
 ## Install
 

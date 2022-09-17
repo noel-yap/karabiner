@@ -7,7 +7,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "insert",
+            "key_code": "delete_forward",
             "modifiers": {
               "mandatory": [
                 "command",
@@ -20,10 +20,11 @@
           },
           "to": [
             {
-              "key_code": "q",
+              "key_code": "eject",
               "modifiers": [
                 "control",
-                "command"
+                "command",
+                "option"
               ]
             }
           ]

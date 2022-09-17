@@ -7,15 +7,7 @@
 * <kbd>left_command</kbd> → <kbd>left_control</kbd>
 * <kbd>left_control</kbd> → <kbd>left_command</kbd>
 * <kbd>right_control</kbd> → <kbd>right_command</kbd>
-* <kbd>insert</kbd> → <kbd>f10</kbd>
 * <kbd>keypad_enter</kbd> → <kbd>return_or_enter</kbd>
-
-### `word.json`
-
-* <kbd>Ctrl</kbd><kbd>Left</kbd> moves to word start
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Left</kbd> selects to word start
-* <kbd>Ctrl</kbd><kbd>Right</kbd> moves to word end
-* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Right</kbd> selects to word end
 
 ### `line.json`
 
@@ -24,11 +16,6 @@
 * <kbd>End</kbd> moves to line end
 * <kbd>Shift</kbd><kbd>End</kbd> selects to line end
 
-### `paragraph.json`
-
-* <kbd>Ctrl</kbd><kbd>Up</kbd> moves to paragraph start
-* <kbd>Ctrl</kbd><kbd>Down</kbd> moves to paragraph end
-
 ### `document.json`
 
 * <kbd>Ctrl</kbd><kbd>Home</kbd> moves to document start
@@ -36,12 +23,22 @@
 * <kbd>Ctrl</kbd><kbd>End</kbd> moves to document end
 * <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>End</kbd> selects to document end
 
+### `exit.json`
+
+* <kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>Delete</kbd> shuts down
+* <kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>Insert</kbd> locks screen
+
 ### `pane.json`
 
 * <kbd>Alt</kbd><kbd>Left</kbd> moves to previous pane or pane aleft
 * <kbd>Alt</kbd><kbd>Up</kbd> moves to previous pane or pane above
 * <kbd>Alt</kbd><kbd>Right</kbd> moves to next pane or pane aright
 * <kbd>Alt</kbd><kbd>Down</kbd> moves to next pane or pane below
+
+### `paragraph.json`
+
+* <kbd>Ctrl</kbd><kbd>Up</kbd> moves to paragraph start
+* <kbd>Ctrl</kbd><kbd>Down</kbd> moves to paragraph end
 
 ### `tab.json`
 
@@ -52,6 +49,13 @@
 
 * <kbd>Window</kbd><kbd>PgUp</kbd> moves to previous window
 * <kbd>Window</kbd><kbd>PgDn</kbd> moves to next window
+
+### `word.json`
+
+* <kbd>Ctrl</kbd><kbd>Left</kbd> moves to word start
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Left</kbd> selects to word start
+* <kbd>Ctrl</kbd><kbd>Right</kbd> moves to word end
+* <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>Right</kbd> selects to word end
 
 ## Install
 

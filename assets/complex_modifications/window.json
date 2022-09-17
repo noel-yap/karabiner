@@ -1,0 +1,59 @@
+{
+  "title": "Window-related mappings",
+  "rules": [
+    {
+      "description": "Ctrl+PgUp to Ctrl+F19",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_up",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f19",
+              "modifiers": [
+                "control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+PgDn to Ctrl+F13",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_down",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f13",
+              "modifiers": [
+                "control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

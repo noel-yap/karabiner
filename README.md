@@ -8,8 +8,6 @@
 * <kbd>left_control</kbd> → <kbd>left_command</kbd>
 * <kbd>right_control</kbd> → <kbd>right_command</kbd>
 * <kbd>insert</kbd> → <kbd>f10</kbd>
-* <kbd>page_up</kbd> → <kbd>f19</kbd>
-* <kbd>page_down</kbd> → <kbd>f13</kbd>
 * <kbd>keypad_enter</kbd> → <kbd>return_or_enter</kbd>
 
 ### `document.json`

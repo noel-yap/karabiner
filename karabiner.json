@@ -448,6 +448,60 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Ctrl+PgUp to Ctrl+F19",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f19",
+                                        "modifiers": [
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+PgDn to Ctrl+F13",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f13",
+                                        "modifiers": [
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },

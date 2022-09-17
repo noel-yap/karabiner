@@ -2,6 +2,64 @@
   "title": "Exit-related mappings",
   "rules": [
     {
+      "description": "Cmd+Opt+Insert to Ctrl+Cmd+q: Lock screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "insert",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "control",
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift+Opt+Insert to Shift+Cmd+q: Log out",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "insert",
+            "modifiers": {
+              "mandatory": [
+                "shift",
+                "option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Cmd+Opt+Delete to Ctrl+Cmd+Opt+Eject: Shutdown",
       "manipulators": [
         {
@@ -25,35 +83,6 @@
                 "control",
                 "command",
                 "option"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Cmd+Opt+Insert to Ctrl+Cmd+q: Lock screen",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "insert",
-            "modifiers": {
-              "mandatory": [
-                "command",
-                "option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "q",
-              "modifiers": [
-                "control",
-                "command"
               ]
             }
           ]

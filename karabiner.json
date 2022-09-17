@@ -1007,6 +1007,35 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Shift+Opt+Insert to Shift+Cmd+q: Log out",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "insert",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift",
+                                            "option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "shift",
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1053,6 +1082,16 @@
                     "simple_modifications": [
                         {
                             "from": {
+                                "key_code": "keypad_enter"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "return_or_enter"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
                                 "key_code": "left_command"
                             },
                             "to": [
@@ -1083,11 +1122,11 @@
                         },
                         {
                             "from": {
-                                "key_code": "keypad_enter"
+                                "key_code": "application"
                             },
                             "to": [
                                 {
-                                    "key_code": "return_or_enter"
+                                    "key_code": "f15"
                                 }
                             ]
                         }

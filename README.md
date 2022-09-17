@@ -4,6 +4,7 @@
 
 ### Keyboard 4000
 
+* <kbd>application</kbd> → <kbd>f15</kbd>
 * <kbd>left_command</kbd> → <kbd>left_control</kbd>
 * <kbd>left_control</kbd> → <kbd>left_command</kbd>
 * <kbd>right_control</kbd> → <kbd>right_command</kbd>
@@ -22,8 +23,9 @@
 
 ### `exit.json`
 
-* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>Delete</kbd> shuts down
-* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>Insert</kbd> locks screen
+* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>⎀</kbd> locks screen
+* <kbd>⇧</kbd><kbd>⎇</kbd><kbd>⎀</kbd> logs out
+* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>⌦</kbd> shuts down
 
 ### `line.json`
 

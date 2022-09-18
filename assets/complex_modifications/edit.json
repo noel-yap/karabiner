@@ -51,6 +51,9 @@
           },
           "to": [
             {
+              "pointing_button": "button1"
+            },
+            {
               "key_code": "v",
               "modifiers": [
                 "command"
@@ -77,6 +80,9 @@
             }
           },
           "to": [
+            {
+              "pointing_button": "button1"
+            },
             {
               "key_code": "v",
               "modifiers": [

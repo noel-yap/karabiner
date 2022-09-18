@@ -11,8 +11,8 @@
                 "parameters": {
                     "basic.simultaneous_threshold_milliseconds": 50,
                     "basic.to_delayed_action_delay_milliseconds": 500,
-                    "basic.to_if_alone_timeout_milliseconds": 1000,
-                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 200,
+                    "basic.to_if_held_down_threshold_milliseconds": 100,
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
@@ -993,6 +993,41 @@
                                         "modifiers": [
                                             "control"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "MouseButton1 to Cmd+c: Copy",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    },
+                                    "pointing_button": "button1"
+                                },
+                                "to_after_key_up": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "pointing_button": "button1"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "pointing_button": "button1"
                                     }
                                 ],
                                 "type": "basic"

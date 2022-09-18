@@ -2,6 +2,41 @@
   "title": "Edit-related mappings",
   "rules": [
     {
+      "description": "MouseButton1 to Cmd+c: Copy",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button1",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to_if_alone": [
+            {
+              "pointing_button": "button1",
+              "halt": true
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "MouseButton3 to Cmd+v: Paste",
       "manipulators": [
         {

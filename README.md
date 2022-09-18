@@ -19,6 +19,7 @@
 
 ### `edit.json`
 
+* <kbd>button1</kbd> copies
 * <kbd>button3</kbd> pastes
 
 ### `exit.json`

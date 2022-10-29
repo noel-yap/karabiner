@@ -12,10 +12,10 @@
 
 ### `document.json`
 
-* <kbd>⌃</kbd><kbd>⇱</kbd> moves to document start
-* <kbd>⇧</kbd><kbd>⌃</kbd><kbd>⇱</kbd> selects to document start
-* <kbd>⌃</kbd><kbd>⇲</kbd> moves to document end
-* <kbd>⇧</kbd><kbd>⌃</kbd><kbd>⇲</kbd> selects to document end
+* <kbd>⌘</kbd><kbd>⇱</kbd> moves to document start
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⇱</kbd> selects to document start
+* <kbd>⌘</kbd><kbd>⇲</kbd> moves to document end
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⇲</kbd> selects to document end
 
 ### `edit.json`
 
@@ -24,9 +24,9 @@
 
 ### `exit.json`
 
-* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>⎀</kbd> locks screen
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⎀</kbd> locks screen
 * <kbd>⇧</kbd><kbd>⎇</kbd><kbd>⎀</kbd> logs out
-* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>⌦</kbd> shuts down
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⌦</kbd> shuts down
 
 ### `line.json`
 
@@ -34,6 +34,8 @@
 * <kbd>⇧</kbd><kbd>⇱</kbd> selects to line start
 * <kbd>⇲</kbd> moves to line end
 * <kbd>⇧</kbd><kbd>⇲</kbd> selects to line end
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⌫</kbd> deletes to line start
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⌦</kbd> deletes to line end
 
 ### `pane.json`
 
@@ -44,20 +46,20 @@
 
 ### `paragraph.json`
 
-* <kbd>⌃</kbd><kbd>↑</kbd> moves to paragraph start
-* <kbd>⌃</kbd><kbd>↓</kbd> moves to paragraph end
+* <kbd>⌘</kbd><kbd>↑</kbd> moves to paragraph start
+* <kbd>⌘</kbd><kbd>↓</kbd> moves to paragraph end
 
 ### `tab.json`
 
-* <kbd>⌃</kbd><kbd>⇞</kbd> moves to previous tab
-* <kbd>⌃</kbd><kbd>⇟</kbd> moves to next tab
+* <kbd>⌘</kbd><kbd>⇞</kbd> moves to previous tab
+* <kbd>⌘</kbd><kbd>⇟</kbd> moves to next tab
 
 ### `word.json`
 
-* <kbd>⌃</kbd><kbd>←</kbd> moves to word start
-* <kbd>⇧</kbd><kbd>⌃</kbd><kbd>←</kbd> selects to word start
-* <kbd>⌃</kbd><kbd>→</kbd> moves to word end
-* <kbd>⇧</kbd><kbd>⌃</kbd><kbd>→</kbd> selects to word end
+* <kbd>⌘</kbd><kbd>←</kbd> moves to word start
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>←</kbd> selects to word start
+* <kbd>⌘</kbd><kbd>→</kbd> moves to word end
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>→</kbd> selects to word end
 
 ## Install
 

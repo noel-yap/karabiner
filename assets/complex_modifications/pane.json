@@ -24,6 +24,12 @@
                 "option"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
+            }
           ]
         }
       ]
@@ -53,6 +59,12 @@
                 "option"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
+            }
           ]
         }
       ]
@@ -79,6 +91,12 @@
               "modifiers": [
                 "option"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
             }
           ]
         }
@@ -109,6 +127,12 @@
                 "option"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
+            }
           ]
         }
       ]
@@ -135,6 +159,12 @@
               "modifiers": [
                 "option"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
             }
           ]
         }
@@ -165,6 +195,12 @@
                 "option"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
+            }
           ]
         }
       ]
@@ -191,6 +227,12 @@
               "modifiers": [
                 "option"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
             }
           ]
         }
@@ -220,6 +262,12 @@
                 "shift",
                 "option"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "event_changed_if",
+              "value": false
             }
           ]
         }

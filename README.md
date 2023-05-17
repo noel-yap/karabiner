@@ -10,6 +10,11 @@
 * <kbd>right_control</kbd> → <kbd>right_command</kbd>
 * <kbd>keypad_enter</kbd> → <kbd>return_or_enter</kbd>
 
+### `app.json`
+
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⇞</kbd> moves to previous app
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⇟</kbd> moves to next app
+
 ### `document.json`
 
 * <kbd>⌘</kbd><kbd>⇱</kbd> moves to document start

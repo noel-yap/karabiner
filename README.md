@@ -54,6 +54,17 @@
 * <kbd>⌘</kbd><kbd>↑</kbd> moves to paragraph start
 * <kbd>⌘</kbd><kbd>↓</kbd> moves to paragraph end
 
+### `space.json`
+
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>←</kbd> moves to left space with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>←</kbd> moves window to left space with wraparound
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>↑</kbd> moves to above space with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>↑</kbd> moves window to above space with wraparound
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>→</kbd> moves to right space with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>→</kbd> moves window to right space with wraparound
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>↓</kbd> moves to below space with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>↓</kbd> moves window to below space with wraparound
+
 ### `tab.json`
 
 * <kbd>⌘</kbd><kbd>⇞</kbd> moves to previous tab

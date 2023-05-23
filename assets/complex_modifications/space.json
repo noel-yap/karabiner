@@ -1,0 +1,1877 @@
+{
+  "title": "Space-related mappings",
+  "rules": [
+    {
+      "description": "Cmd+Opt+7 ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_7",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "keypad_7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+8 ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_8",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "keypad_8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+9 ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_9",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "keypad_9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+4 ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_4",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "keypad_4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+5 ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_5",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "keypad_5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+6 ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_6",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "keypad_6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+1 ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_1",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "keypad_1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+2 ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_2",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "keypad_2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+Opt+3 ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_3",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "keypad_3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡7 ⋀ Cmd+Opt+Left ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "keypad_9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡8 ⋀ Cmd+Opt+Left ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "keypad_7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡9 ⋀ Cmd+Opt+Left ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "keypad_8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡4 ⋀ Cmd+Opt+Left ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "keypad_6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡5 ⋀ Cmd+Opt+Left ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "keypad_4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡6 ⋀ Cmd+Opt+Left ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "keypad_5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡1 ⋀ Cmd+Opt+Left ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "keypad_3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡2 ⋀ Cmd+Opt+Left ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "keypad_1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡3 ⋀ Cmd+Opt+Left ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "keypad_2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡7 ⋀ Cmd+Opt+Up ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "keypad_1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡8 ⋀ Cmd+Opt+Up ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "keypad_2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡9 ⋀ Cmd+Opt+Up ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "keypad_3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡4 ⋀ Cmd+Opt+Up ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "keypad_7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡5 ⋀ Cmd+Opt+Up ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "keypad_8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡6 ⋀ Cmd+Opt+Up ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "keypad_9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡1 ⋀ Cmd+Opt+Up ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "keypad_4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡2 ⋀ Cmd+Opt+Up ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "keypad_5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡3 ⋀ Cmd+Opt+Up ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "keypad_6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡7 ⋀ Cmd+Opt+Right ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "keypad_8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡8 ⋀ Cmd+Opt+Right ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "keypad_9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡9 ⋀ Cmd+Opt+Right ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "keypad_7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡4 ⋀ Cmd+Opt+Right ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "keypad_5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡5 ⋀ Cmd+Opt+Right ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "keypad_6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡6 ⋀ Cmd+Opt+Right ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "keypad_4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡1 ⋀ Cmd+Opt+Right ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "keypad_2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡2 ⋀ Cmd+Opt+Right ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "keypad_3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡3 ⋀ Cmd+Opt+Right ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "keypad_1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡7 ⋀ Cmd+Opt+Down ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "keypad_4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡8 ⋀ Cmd+Opt+Down ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "keypad_5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡9 ⋀ Cmd+Opt+Down ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "keypad_6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡4 ⋀ Cmd+Opt+Down ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "keypad_1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡5 ⋀ Cmd+Opt+Down ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "keypad_2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡6 ⋀ Cmd+Opt+Down ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "keypad_3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡1 ⋀ Cmd+Opt+Down ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "keypad_7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡2 ⋀ Cmd+Opt+Down ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "keypad_8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "space≡3 ⋀ Cmd+Opt+Down ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "space",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "keypad_9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "space",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "title": "Application-related mappings",
   "rules": [
     {
-      "description": "Cmd+Opt+PgUp ↦ Shift+Cmd+Tab: Moves to previous application",
+      "description": "Cmd+Opt+PgUp ↦ Shift+Cmd+Tab: Move to previous application",
       "manipulators": [
         {
           "type": "basic",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+PgDn ↦ Cmd+Tab: Moves to next application",
+      "description": "Cmd+Opt+PgDn ↦ Cmd+Tab: Move to next application",
       "manipulators": [
         {
           "type": "basic",

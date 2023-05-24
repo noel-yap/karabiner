@@ -4,11 +4,11 @@
 
 ### Keyboard 4000
 
-* <kbd>application</kbd> → <kbd>f15</kbd>
-* <kbd>left_command</kbd> → <kbd>left_control</kbd>
-* <kbd>left_control</kbd> → <kbd>left_command</kbd>
-* <kbd>right_control</kbd> → <kbd>right_command</kbd>
-* <kbd>keypad_enter</kbd> → <kbd>return_or_enter</kbd>
+* <kbd>application</kbd> ↦ <kbd>f15</kbd>
+* <kbd>left_command</kbd> ↦ <kbd>left_control</kbd>
+* <kbd>left_control</kbd> ↦ <kbd>left_command</kbd>
+* <kbd>right_control</kbd> ↦ <kbd>right_command</kbd>
+* <kbd>keypad_enter</kbd> ↦ <kbd>return_or_enter</kbd>
 
 ### `application.json`
 
@@ -26,6 +26,7 @@
 
 * <kbd>button1</kbd> copies
 * <kbd>button3</kbd> pastes
+* <kbd>shift+button3</kbd> opens pasteboard
 
 ### `exit.json`
 
@@ -44,15 +45,19 @@
 
 ### `pane.json`
 
-* <kbd>⎇</kbd><kbd>←</kbd> moves to previous pane or pane aleft
-* <kbd>⎇</kbd><kbd>↑</kbd> moves to previous pane or pane above
-* <kbd>⎇</kbd><kbd>→</kbd> moves to next pane or pane aright
-* <kbd>⎇</kbd><kbd>↓</kbd> moves to next pane or pane below
+* <kbd>⎇</kbd><kbd>←</kbd> moves to previous pane or leftward pane
+* <kbd>⎇</kbd><kbd>↑</kbd> moves to previous pane or upward pane
+* <kbd>⎇</kbd><kbd>→</kbd> moves to next pane or rightward pane
+* <kbd>⇧</kbd><kbd>⎇</kbd><kbd>→</kbd> splits pane rightward
+* <kbd>⎇</kbd><kbd>↓</kbd> moves to next pane or downward pane
+* <kbd>⇧</kbd><kbd>⎇</kbd><kbd>↓</kbd> splits pane downward
 
 ### `paragraph.json`
 
 * <kbd>⌘</kbd><kbd>↑</kbd> moves to paragraph start
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↑</kbd> selects to paragraph start
 * <kbd>⌘</kbd><kbd>↓</kbd> moves to paragraph end
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↓</kbd> selects to paragraph end
 
 ### `space.json`
 

@@ -2,7 +2,7 @@
   "title": "Space-related mappings",
   "rules": [
     {
-      "description": "Cmd+Opt+7 ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "description": "Shift?+Cmd+Opt+7 ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+8 ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "description": "Shift?+Cmd+Opt+8 ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+9 ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "description": "Shift?+Cmd+Opt+9 ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+4 ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "description": "Shift?+Cmd+Opt+4 ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+5 ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "description": "Shift?+Cmd+Opt+5 ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+6 ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "description": "Shift?+Cmd+Opt+6 ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+1 ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "description": "Shift?+Cmd+Opt+1 ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -254,7 +254,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+2 ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "description": "Shift?+Cmd+Opt+2 ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+3 ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "description": "Shift?+Cmd+Opt+3 ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -326,7 +326,7 @@
       ]
     },
     {
-      "description": "space≡7 ⋀ Cmd+Opt+Left ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "description": "space≡7 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -369,7 +369,7 @@
       ]
     },
     {
-      "description": "space≡8 ⋀ Cmd+Opt+Left ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "description": "space≡8 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -412,7 +412,7 @@
       ]
     },
     {
-      "description": "space≡9 ⋀ Cmd+Opt+Left ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "description": "space≡9 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -455,7 +455,7 @@
       ]
     },
     {
-      "description": "space≡4 ⋀ Cmd+Opt+Left ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "description": "space≡4 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -498,7 +498,7 @@
       ]
     },
     {
-      "description": "space≡5 ⋀ Cmd+Opt+Left ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "description": "space≡5 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -541,7 +541,7 @@
       ]
     },
     {
-      "description": "space≡6 ⋀ Cmd+Opt+Left ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "description": "space≡6 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -584,7 +584,7 @@
       ]
     },
     {
-      "description": "space≡1 ⋀ Cmd+Opt+Left ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "description": "space≡1 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -627,7 +627,7 @@
       ]
     },
     {
-      "description": "space≡2 ⋀ Cmd+Opt+Left ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "description": "space≡2 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -670,7 +670,7 @@
       ]
     },
     {
-      "description": "space≡3 ⋀ Cmd+Opt+Left ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "description": "space≡3 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -713,7 +713,7 @@
       ]
     },
     {
-      "description": "space≡7 ⋀ Cmd+Opt+Up ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "description": "space≡7 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -756,7 +756,7 @@
       ]
     },
     {
-      "description": "space≡8 ⋀ Cmd+Opt+Up ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "description": "space≡8 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -799,7 +799,7 @@
       ]
     },
     {
-      "description": "space≡9 ⋀ Cmd+Opt+Up ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "description": "space≡9 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -842,7 +842,7 @@
       ]
     },
     {
-      "description": "space≡4 ⋀ Cmd+Opt+Up ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "description": "space≡4 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -885,7 +885,7 @@
       ]
     },
     {
-      "description": "space≡5 ⋀ Cmd+Opt+Up ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "description": "space≡5 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -928,7 +928,7 @@
       ]
     },
     {
-      "description": "space≡6 ⋀ Cmd+Opt+Up ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "description": "space≡6 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -971,7 +971,7 @@
       ]
     },
     {
-      "description": "space≡1 ⋀ Cmd+Opt+Up ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "description": "space≡1 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1014,7 +1014,7 @@
       ]
     },
     {
-      "description": "space≡2 ⋀ Cmd+Opt+Up ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "description": "space≡2 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1057,7 +1057,7 @@
       ]
     },
     {
-      "description": "space≡3 ⋀ Cmd+Opt+Up ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "description": "space≡3 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1100,7 +1100,7 @@
       ]
     },
     {
-      "description": "space≡7 ⋀ Cmd+Opt+Right ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "description": "space≡7 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1143,7 +1143,7 @@
       ]
     },
     {
-      "description": "space≡8 ⋀ Cmd+Opt+Right ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "description": "space≡8 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1186,7 +1186,7 @@
       ]
     },
     {
-      "description": "space≡9 ⋀ Cmd+Opt+Right ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "description": "space≡9 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1229,7 +1229,7 @@
       ]
     },
     {
-      "description": "space≡4 ⋀ Cmd+Opt+Right ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "description": "space≡4 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1272,7 +1272,7 @@
       ]
     },
     {
-      "description": "space≡5 ⋀ Cmd+Opt+Right ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "description": "space≡5 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1315,7 +1315,7 @@
       ]
     },
     {
-      "description": "space≡6 ⋀ Cmd+Opt+Right ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "description": "space≡6 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1358,7 +1358,7 @@
       ]
     },
     {
-      "description": "space≡1 ⋀ Cmd+Opt+Right ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "description": "space≡1 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1401,7 +1401,7 @@
       ]
     },
     {
-      "description": "space≡2 ⋀ Cmd+Opt+Right ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "description": "space≡2 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1444,7 +1444,7 @@
       ]
     },
     {
-      "description": "space≡3 ⋀ Cmd+Opt+Right ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "description": "space≡3 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1487,7 +1487,7 @@
       ]
     },
     {
-      "description": "space≡7 ⋀ Cmd+Opt+Down ↦ {space≔4, Cmd+Opt+4}: Moves to middle-left screen",
+      "description": "space≡7 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1530,7 +1530,7 @@
       ]
     },
     {
-      "description": "space≡8 ⋀ Cmd+Opt+Down ↦ {space≔5, Cmd+Opt+5}: Moves to middle-center screen",
+      "description": "space≡8 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1573,7 +1573,7 @@
       ]
     },
     {
-      "description": "space≡9 ⋀ Cmd+Opt+Down ↦ {space≔6, Cmd+Opt+6}: Moves to middle-right screen",
+      "description": "space≡9 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1616,7 +1616,7 @@
       ]
     },
     {
-      "description": "space≡4 ⋀ Cmd+Opt+Down ↦ {space≔1, Cmd+Opt+1}: Moves to bottom-left screen",
+      "description": "space≡4 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1659,7 +1659,7 @@
       ]
     },
     {
-      "description": "space≡5 ⋀ Cmd+Opt+Down ↦ {space≔2, Cmd+Opt+2}: Moves to bottom-center screen",
+      "description": "space≡5 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1702,7 +1702,7 @@
       ]
     },
     {
-      "description": "space≡6 ⋀ Cmd+Opt+Down ↦ {space≔3, Cmd+Opt+3}: Moves to bottom-right screen",
+      "description": "space≡6 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1745,7 +1745,7 @@
       ]
     },
     {
-      "description": "space≡1 ⋀ Cmd+Opt+Down ↦ {space≔7, Cmd+Opt+7}: Moves to top-left screen",
+      "description": "space≡1 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1788,7 +1788,7 @@
       ]
     },
     {
-      "description": "space≡2 ⋀ Cmd+Opt+Down ↦ {space≔8, Cmd+Opt+8}: Moves to top-center screen",
+      "description": "space≡2 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
       "manipulators": [
         {
           "type": "basic",
@@ -1831,7 +1831,7 @@
       ]
     },
     {
-      "description": "space≡3 ⋀ Cmd+Opt+Down ↦ {space≔9, Cmd+Opt+9}: Moves to top-right screen",
+      "description": "space≡3 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
       "manipulators": [
         {
           "type": "basic",

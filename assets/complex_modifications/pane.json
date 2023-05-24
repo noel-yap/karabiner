@@ -2,7 +2,7 @@
   "title": "Pane-related mappings",
   "rules": [
     {
-      "description": "Opt+Left to Opt+F14",
+      "description": "Opt+Left ↦ Opt+F14: Move to previous or leftward pane",
       "manipulators": [
         {
           "type": "basic",
@@ -35,42 +35,7 @@
       ]
     },
     {
-      "description": "Shift+Opt+Left to Shift+Opt+F14",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f14",
-              "modifiers": [
-                "shift",
-                "option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Opt+Up to Opt+F18",
+      "description": "Opt+Up ↦ Opt+F18: Move to previous or upward pane",
       "manipulators": [
         {
           "type": "basic",
@@ -103,42 +68,7 @@
       ]
     },
     {
-      "description": "Shift+Opt+Up to Shift+Opt+F18",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "up_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f18",
-              "modifiers": [
-                "shift",
-                "option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Opt+Right to Opt+F16",
+      "description": "Shift?+Opt+Right ↦ Shift?+Opt+F16: Move/Split to next or rightward pane",
       "manipulators": [
         {
           "type": "basic",
@@ -149,7 +79,8 @@
                 "option"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -171,42 +102,7 @@
       ]
     },
     {
-      "description": "Shift+Opt+Right to Shift+Opt+F16",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f16",
-              "modifiers": [
-                "shift",
-                "option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Opt+Down to Opt+F12",
+      "description": "Shift?+Opt+Down ↦ Shift?+Opt+F12: Move/Split to next or downward pane",
       "manipulators": [
         {
           "type": "basic",
@@ -217,7 +113,8 @@
                 "option"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -225,41 +122,6 @@
             {
               "key_code": "f12",
               "modifiers": [
-                "option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Shift+Opt+Down to Shift+Opt+F12",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "down_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f12",
-              "modifiers": [
-                "shift",
                 "option"
               ]
             }

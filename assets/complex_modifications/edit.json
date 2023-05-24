@@ -2,7 +2,7 @@
   "title": "Edit-related mappings",
   "rules": [
     {
-      "description": "MouseButton1 to Cmd+c: Copy",
+      "description": "MouseButton1 ↦ Cmd+c: Copy",
       "manipulators": [
         {
           "type": "basic",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "description": "MouseButton3 to Cmd+v: Paste",
+      "description": "Shift?+MouseButton3 ↦ Shift?+Cmd+v: Paste/Pasteboard",
       "manipulators": [
         {
           "type": "basic",
@@ -49,37 +49,8 @@
             "pointing_button": "button3",
             "modifiers": {
               "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "pointing_button": "button1"
-            },
-            {
-              "key_code": "v",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Shift+MouseButton3 to Shift+Cmd+v: Pasteboard",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button3",
-            "modifiers": {
-              "mandatory": [
+                "caps_lock",
                 "shift"
-              ],
-              "optional": [
-                "caps_lock"
               ]
             }
           },
@@ -90,7 +61,6 @@
             {
               "key_code": "v",
               "modifiers": [
-                "shift",
                 "command"
               ]
             }

@@ -18,7 +18,64 @@
                 },
                 "rules": [
                     {
-                        "description": "Cmd+Home to Cmd+Up: Move to document start",
+                        "description": "Cmd+Opt+PgUp ↦ Shift+Cmd+Tab: Move to previous application",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "shift",
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Opt+PgDn ↦ Cmd+Tab: Move to next application",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Home ↦ Shift?+Cmd+Up: Move/Select to document start",
                         "manipulators": [
                             {
                                 "from": {
@@ -28,157 +85,15 @@
                                             "command"
                                         ],
                                         "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Home to Shift+Cmd+Up: Select to document start",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "home",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+End to Cmd+Down: Move to document end",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "end",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+End to Shift+Cmd+Down: Select to document end",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "end",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "MouseButton3 to Cmd+v: Paste",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    },
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
-                                        "key_code": "v",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+MouseButton3 to Shift+Cmd+v: Pasteboard",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "mandatory": [
+                                            "caps_lock",
                                             "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
                                         ]
-                                    },
-                                    "pointing_button": "button3"
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
-                                        "key_code": "v",
+                                        "key_code": "up_arrow",
                                         "modifiers": [
-                                            "shift",
                                             "command"
                                         ]
                                     }
@@ -188,7 +103,35 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+Insert to Ctrl+Cmd+q: Lock screen",
+                        "description": "Shift?+Cmd+End ↦ Shift?+Cmd+Down: Move/Select to document end",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "end",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Opt+Insert ↦ Ctrl+Cmd+q: Lock screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -217,7 +160,7 @@
                         ]
                     },
                     {
-                        "description": "Shift+Opt+Insert to Shift+Cmd+q: Log out",
+                        "description": "Shift+Opt+Insert ↦ Shift+Cmd+q: Log out",
                         "manipulators": [
                             {
                                 "from": {
@@ -246,7 +189,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+Delete to Ctrl+Cmd+Opt+Eject: Shutdown",
+                        "description": "Cmd+Opt+Delete ↦ Ctrl+Cmd+Opt+Eject: Shutdown",
                         "manipulators": [
                             {
                                 "from": {
@@ -276,904 +219,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Up to Opt+Up",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "up_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Up to Shift+Opt+Up",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "up_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Down to Opt+Down",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "down_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Down to Shift+Opt+Down",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "down_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Up to Opt+Up",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "up_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Up to Shift+Opt+Up",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "up_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Down to Opt+Down",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "down_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Down to Shift+Opt+Down",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "down_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Home to Cmd+Left: Move to line start",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "home",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": "command"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Home to Shift+Cmd+Left: Select to line start",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "home",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "End to Cmd+Right: Move to line end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "end",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": "command"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+End to Shift+Cmd+Right: Select to line end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "end",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Backspace to Cmd+Delete: Delete to line start",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Delete to Ctrl+k: Delete to line end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_forward",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "k",
-                                        "modifiers": [
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Opt+Left to Opt+F14",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f14",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Opt+Left to Shift+Opt+F14",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f14",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Opt+Up to Opt+F18",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "up_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f18",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Opt+Up to Shift+Opt+F18",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "up_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f18",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Opt+Right to Opt+F16",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f16",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Opt+Right to Shift+Opt+F16",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f16",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Opt+Down to Opt+F12",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "down_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f12",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Opt+Down to Shift+Opt+F12",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "down_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f12",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Left to Opt+Left: Move to word start",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Left to Shift+Opt+Left: Select to word start",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Right to Opt+Right: Move to word end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Shift+Cmd+Right to Shift+Opt+Right: Select to word end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "shift",
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Bksp to Opt+Bksp: Delete to word start",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Del to Opt+Fn+Bksp: Delete to word end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.[Ff]inder$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    },
-                                    {
-                                        "type": "event_changed_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_forward",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": [
-                                            "option",
-                                            "fn"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Del to Cmd+Opt+Fn+Bksp: Delete file",
+                        "description": "Del ↦ Cmd+Opt+Fn+Bksp: Delete file",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1210,34 +256,28 @@
                         ]
                     },
                     {
-                        "description": "Cmd+PgUp to Ctrl+PgUp",
+                        "description": "Shift?+Home ↦ Shift?+Cmd+Left: Move/Select to line start",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "bundle_identifiers": [
-                                            "^com\\.google\\.Chrome$"
-                                        ],
-                                        "type": "frontmost_application_if"
+                                        "type": "event_changed_if",
+                                        "value": false
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "page_up",
+                                    "key_code": "home",
                                     "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "shift"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "page_up",
-                                        "modifiers": [
-                                            "control"
-                                        ]
+                                        "key_code": "left_arrow",
+                                        "modifiers": "command"
                                     }
                                 ],
                                 "type": "basic"
@@ -1245,34 +285,28 @@
                         ]
                     },
                     {
-                        "description": "Cmd+PgDn to Ctrl+PgDn",
+                        "description": "Shift?+End ↦ Shift?+Cmd+Right: Move/Select to line end",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "bundle_identifiers": [
-                                            "^com\\.google\\.Chrome$"
-                                        ],
-                                        "type": "frontmost_application_if"
+                                        "type": "event_changed_if",
+                                        "value": false
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "page_down",
+                                    "key_code": "end",
                                     "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "shift"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "page_down",
-                                        "modifiers": [
-                                            "control"
-                                        ]
+                                        "key_code": "right_arrow",
+                                        "modifiers": "command"
                                     }
                                 ],
                                 "type": "basic"
@@ -1280,42 +314,21 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+PgUp to Shift+Cmd+`",
+                        "description": "Shift+Cmd+Backspace ↦ Cmd+Delete: Delete to line start",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "page_up",
+                                    "key_code": "delete_or_backspace",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
                                             "shift",
                                             "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+PgDn to Cmd+`",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "page_down",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -1324,7 +337,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "grave_accent_and_tilde",
+                                        "key_code": "delete_or_backspace",
                                         "modifiers": [
                                             "command"
                                         ]
@@ -1335,14 +348,53 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+PgUp to Shift+Cmd+Tab",
+                        "description": "Shift+Cmd+Delete ↦ Ctrl+k: Delete to line end",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "page_up",
+                                    "key_code": "delete_forward",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command",
+                                            "shift",
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "k",
+                                        "modifiers": [
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Opt+Left ↦ Opt+F14: Move to previous or leftward pane",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
                                             "option"
                                         ],
                                         "optional": [
@@ -1352,10 +404,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
+                                        "key_code": "f14",
                                         "modifiers": [
-                                            "shift",
-                                            "command"
+                                            "option"
                                         ]
                                     }
                                 ],
@@ -1364,14 +415,19 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+Opt+PgDn to Cmd+`",
+                        "description": "Opt+Up ↦ Opt+F18: Move to previous or upward pane",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "page_down",
+                                    "key_code": "up_arrow",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command",
                                             "option"
                                         ],
                                         "optional": [
@@ -1381,9 +437,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
+                                        "key_code": "f18",
                                         "modifiers": [
-                                            "command"
+                                            "option"
                                         ]
                                     }
                                 ],
@@ -1392,7 +448,131 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+7 to {space≔7, Cmd+Opt+7}",
+                        "description": "Shift?+Opt+Right ↦ Shift?+Opt+F16: Move/Split to next or rightward pane",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f16",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Opt+Down ↦ Shift?+Opt+F12: Move/Split to next or downward pane",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f12",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Up ↦ Shift?+Opt+Up: Move/Select to paragraph start",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Down ↦ Shift?+Opt+Down: Move/Select to paragraph end",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+7 ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1428,7 +608,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+8 to {space≔8, Cmd+Opt+8}",
+                        "description": "Shift?+Cmd+Opt+8 ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1464,7 +644,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+9 to {space≔9, Cmd+Opt+9}",
+                        "description": "Shift?+Cmd+Opt+9 ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1500,7 +680,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+4 to {space≔4, Cmd+Opt+4}",
+                        "description": "Shift?+Cmd+Opt+4 ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1536,7 +716,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+5 to {space≔5, Cmd+Opt+5}",
+                        "description": "Shift?+Cmd+Opt+5 ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1572,7 +752,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+6 to {space≔6, Cmd+Opt+6}",
+                        "description": "Shift?+Cmd+Opt+6 ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1608,7 +788,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+1 to {space≔1, Cmd+Opt+1}",
+                        "description": "Shift?+Cmd+Opt+1 ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1644,7 +824,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+2 to {space≔2, Cmd+Opt+2}",
+                        "description": "Shift?+Cmd+Opt+2 ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1680,7 +860,7 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+3 to {space≔3, Cmd+Opt+3}",
+                        "description": "Shift?+Cmd+Opt+3 ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
                         "manipulators": [
                             {
                                 "from": {
@@ -1716,7 +896,7 @@
                         ]
                     },
                     {
-                        "description": "space≡7 ⋀ Cmd+Opt+Left to {space≔9, Cmd+Opt+9}",
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1759,7 +939,7 @@
                         ]
                     },
                     {
-                        "description": "space≡8 ⋀ Cmd+Opt+Left to {space≔7, Cmd+Opt+7}",
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1802,7 +982,7 @@
                         ]
                     },
                     {
-                        "description": "space≡9 ⋀ Cmd+Opt+Left to {space≔8, Cmd+Opt+8}",
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1845,7 +1025,7 @@
                         ]
                     },
                     {
-                        "description": "space≡4 ⋀ Cmd+Opt+Left to {space≔6, Cmd+Opt+6}",
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1888,7 +1068,7 @@
                         ]
                     },
                     {
-                        "description": "space≡5 ⋀ Cmd+Opt+Left to {space≔4, Cmd+Opt+4}",
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1931,7 +1111,7 @@
                         ]
                     },
                     {
-                        "description": "space≡6 ⋀ Cmd+Opt+Left to {space≔5, Cmd+Opt+5}",
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1974,7 +1154,7 @@
                         ]
                     },
                     {
-                        "description": "space≡1 ⋀ Cmd+Opt+Left to {space≔3, Cmd+Opt+3}",
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2017,7 +1197,7 @@
                         ]
                     },
                     {
-                        "description": "space≡2 ⋀ Cmd+Opt+Left to {space≔1, Cmd+Opt+1}",
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2060,7 +1240,7 @@
                         ]
                     },
                     {
-                        "description": "space≡3 ⋀ Cmd+Opt+Left to {space≔2, Cmd+Opt+2}",
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2103,7 +1283,7 @@
                         ]
                     },
                     {
-                        "description": "space≡7 ⋀ Cmd+Opt+Up to {space≔1, Cmd+Opt+1}",
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2146,7 +1326,7 @@
                         ]
                     },
                     {
-                        "description": "space≡8 ⋀ Cmd+Opt+Up to {space≔2, Cmd+Opt+2}",
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2189,7 +1369,7 @@
                         ]
                     },
                     {
-                        "description": "space≡9 ⋀ Cmd+Opt+Up to {space≔3, Cmd+Opt+3}",
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2232,7 +1412,7 @@
                         ]
                     },
                     {
-                        "description": "space≡4 ⋀ Cmd+Opt+Up to {space≔7, Cmd+Opt+7}",
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2275,7 +1455,7 @@
                         ]
                     },
                     {
-                        "description": "space≡5 ⋀ Cmd+Opt+Up to {space≔8, Cmd+Opt+8}",
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2318,7 +1498,7 @@
                         ]
                     },
                     {
-                        "description": "space≡6 ⋀ Cmd+Opt+Up to {space≔9, Cmd+Opt+9}",
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2361,7 +1541,7 @@
                         ]
                     },
                     {
-                        "description": "space≡1 ⋀ Cmd+Opt+Up to {space≔4, Cmd+Opt+4}",
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2404,7 +1584,7 @@
                         ]
                     },
                     {
-                        "description": "space≡2 ⋀ Cmd+Opt+Up to {space≔5, Cmd+Opt+5}",
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2447,7 +1627,7 @@
                         ]
                     },
                     {
-                        "description": "space≡3 ⋀ Cmd+Opt+Up to {space≔6, Cmd+Opt+6}",
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2490,7 +1670,7 @@
                         ]
                     },
                     {
-                        "description": "space≡7 ⋀ Cmd+Opt+Right to {space≔8, Cmd+Opt+8}",
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2533,7 +1713,7 @@
                         ]
                     },
                     {
-                        "description": "space≡8 ⋀ Cmd+Opt+Right to {space≔9, Cmd+Opt+9}",
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2576,7 +1756,7 @@
                         ]
                     },
                     {
-                        "description": "space≡9 ⋀ Cmd+Opt+Right to {space≔7, Cmd+Opt+7}",
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2619,7 +1799,7 @@
                         ]
                     },
                     {
-                        "description": "space≡4 ⋀ Cmd+Opt+Right to {space≔5, Cmd+Opt+5}",
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2662,7 +1842,7 @@
                         ]
                     },
                     {
-                        "description": "space≡5 ⋀ Cmd+Opt+Right to {space≔6, Cmd+Opt+6}",
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2705,7 +1885,7 @@
                         ]
                     },
                     {
-                        "description": "space≡6 ⋀ Cmd+Opt+Right to {space≔4, Cmd+Opt+4}",
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2748,7 +1928,7 @@
                         ]
                     },
                     {
-                        "description": "space≡1 ⋀ Cmd+Opt+Right to {space≔2, Cmd+Opt+2}",
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2791,7 +1971,7 @@
                         ]
                     },
                     {
-                        "description": "space≡2 ⋀ Cmd+Opt+Right to {space≔3, Cmd+Opt+3}",
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2834,7 +2014,7 @@
                         ]
                     },
                     {
-                        "description": "space≡3 ⋀ Cmd+Opt+Right to {space≔1, Cmd+Opt+1}",
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2877,7 +2057,7 @@
                         ]
                     },
                     {
-                        "description": "space≡7 ⋀ Cmd+Opt+Down to {space≔4, Cmd+Opt+4}",
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2920,7 +2100,7 @@
                         ]
                     },
                     {
-                        "description": "space≡8 ⋀ Cmd+Opt+Down to {space≔5, Cmd+Opt+5}",
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2963,7 +2143,7 @@
                         ]
                     },
                     {
-                        "description": "space≡9 ⋀ Cmd+Opt+Down to {space≔6, Cmd+Opt+6}",
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -3006,7 +2186,7 @@
                         ]
                     },
                     {
-                        "description": "space≡4 ⋀ Cmd+Opt+Down to {space≔1, Cmd+Opt+1}",
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -3049,7 +2229,7 @@
                         ]
                     },
                     {
-                        "description": "space≡5 ⋀ Cmd+Opt+Down to {space≔2, Cmd+Opt+2}",
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -3092,7 +2272,7 @@
                         ]
                     },
                     {
-                        "description": "space≡6 ⋀ Cmd+Opt+Down to {space≔3, Cmd+Opt+3}",
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -3135,7 +2315,7 @@
                         ]
                     },
                     {
-                        "description": "space≡1 ⋀ Cmd+Opt+Down to {space≔7, Cmd+Opt+7}",
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -3178,7 +2358,7 @@
                         ]
                     },
                     {
-                        "description": "space≡2 ⋀ Cmd+Opt+Down to {space≔8, Cmd+Opt+8}",
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -3221,7 +2401,7 @@
                         ]
                     },
                     {
-                        "description": "space≡3 ⋀ Cmd+Opt+Down to {space≔9, Cmd+Opt+9}",
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -3256,6 +2436,266 @@
                                         "modifiers": [
                                             "command",
                                             "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+PgUp ↦ Ctrl+PgUp: Move to previous tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up",
+                                        "modifiers": [
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+PgDn ↦ Ctrl+PgDn: Move to next tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_down",
+                                        "modifiers": [
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+PgUp ↦ Shift+Cmd+`: Move to previous window",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "shift",
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+PgDn ↦ Cmd+`: Move to next window",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Left ↦ Shift?+Opt+Left: Move/Select to word start",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Right ↦ Shift?+Opt+Right: Move/Select to word end",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Bksp ↦ Opt+Bksp: Delete to word start",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Del ↦ Opt+Fn+Bksp: Delete to word end",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "event_changed_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "delete_forward",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "option",
+                                            "fn"
                                         ]
                                     }
                                 ],

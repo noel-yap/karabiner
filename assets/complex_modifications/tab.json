@@ -2,7 +2,7 @@
   "title": "Tab-related mappings",
   "rules": [
     {
-      "description": "Cmd+PgUp to Ctrl+PgUp",
+      "description": "Cmd+PgUp ↦ Ctrl+PgUp: Move to previous tab",
       "manipulators": [
         {
           "type": "basic",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "Cmd+PgDn to Ctrl+PgDn",
+      "description": "Cmd+PgDn ↦ Ctrl+PgDn: Move to next tab",
       "manipulators": [
         {
           "type": "basic",

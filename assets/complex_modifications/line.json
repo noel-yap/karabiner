@@ -2,7 +2,7 @@
   "title": "Line-related mappings",
   "rules": [
     {
-      "description": "Home to Cmd+Left: Move to line start",
+      "description": "Shift?+Home ↦ Shift?+Cmd+Left: Move/Select to line start",
       "manipulators": [
         {
           "type": "basic",
@@ -10,7 +10,8 @@
             "key_code": "home",
             "modifiers": {
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -30,41 +31,7 @@
       ]
     },
     {
-      "description": "Shift+Home to Shift+Cmd+Left: Select to line start",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "home",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "shift",
-                "command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "End to Cmd+Right: Move to line end",
+      "description": "Shift?+End ↦ Shift?+Cmd+Right: Move/Select to line end",
       "manipulators": [
         {
           "type": "basic",
@@ -72,7 +39,8 @@
             "key_code": "end",
             "modifiers": {
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -92,41 +60,7 @@
       ]
     },
     {
-      "description": "Shift+End to Shift+Cmd+Right: Select to line end",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "end",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "shift",
-                "command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Shift+Cmd+Backspace to Cmd+Delete: Delete to line start",
+      "description": "Shift+Cmd+Backspace ↦ Cmd+Delete: Delete to line start",
       "manipulators": [
         {
           "type": "basic",
@@ -160,7 +94,7 @@
       ]
     },
     {
-      "description": "Shift+Cmd+Delete to Ctrl+k: Delete to line end",
+      "description": "Shift+Cmd+Delete ↦ Ctrl+k: Delete to line end",
       "manipulators": [
         {
           "type": "basic",

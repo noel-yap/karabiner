@@ -2,7 +2,7 @@
   "title": "Window-related mappings",
   "rules": [
     {
-      "description": "Ctrl+PgUp to Shift+Cmd+`",
+      "description": "Ctrl+PgUp ↦ Shift+Cmd+`: Move to previous window",
       "manipulators": [
         {
           "type": "basic",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "description": "Ctrl+PgDn to Cmd+`",
+      "description": "Ctrl+PgDn ↦ Cmd+`: Move to next window",
       "manipulators": [
         {
           "type": "basic",

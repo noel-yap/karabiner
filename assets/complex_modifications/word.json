@@ -2,7 +2,7 @@
   "title": "Word-related mappings",
   "rules": [
     {
-      "description": "Cmd+Left to Opt+Left: Move to word start",
+      "description": "Shift?+Cmd+Left ↦ Shift?+Opt+Left: Move/Select to word start",
       "manipulators": [
         {
           "type": "basic",
@@ -13,7 +13,8 @@
                 "command"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -35,42 +36,7 @@
       ]
     },
     {
-      "description": "Shift+Cmd+Left to Shift+Opt+Left: Select to word start",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "shift",
-                "option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Cmd+Right to Opt+Right: Move to word end",
+      "description": "Shift?+Cmd+Right ↦ Shift?+Opt+Right: Move/Select to word end",
       "manipulators": [
         {
           "type": "basic",
@@ -81,7 +47,8 @@
                 "command"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -103,42 +70,7 @@
       ]
     },
     {
-      "description": "Shift+Cmd+Right to Shift+Opt+Right: Select to word end",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "shift",
-                "option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "event_changed_if",
-              "value": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Cmd+Bksp to Opt+Bksp: Delete to word start",
+      "description": "Cmd+Bksp ↦ Opt+Bksp: Delete to word start",
       "manipulators": [
         {
           "type": "basic",
@@ -171,7 +103,7 @@
       ]
     },
     {
-      "description": "Cmd+Del to Opt+Fn+Bksp: Delete to word end",
+      "description": "Cmd+Del ↦ Opt+Fn+Bksp: Delete to word end",
       "manipulators": [
         {
           "type": "basic",

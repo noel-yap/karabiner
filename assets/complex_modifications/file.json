@@ -2,7 +2,7 @@
   "title": "Finder-related mappings",
   "rules": [
     {
-      "description": "Del to Cmd+Opt+Fn+Bksp: Delete file",
+      "description": "Del ↦ Cmd+Opt+Fn+Bksp: Delete file",
       "manipulators": [
         {
           "type": "basic",

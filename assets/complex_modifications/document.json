@@ -2,7 +2,7 @@
   "title": "Document-related mappings",
   "rules": [
     {
-      "description": "Cmd+Home to Cmd+Up: Move to document start",
+      "description": "Shift?+Cmd+Home ↦ Shift?+Cmd+Up: Move/Select to document start",
       "manipulators": [
         {
           "type": "basic",
@@ -13,7 +13,8 @@
                 "command"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -29,36 +30,7 @@
       ]
     },
     {
-      "description": "Shift+Cmd+Home to Shift+Cmd+Up: Select to document start",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "home",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "shift",
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Cmd+End to Cmd+Down: Move to document end",
+      "description": "Shift?+Cmd+End ↦ Shift?+Cmd+Down: Move/Select to document end",
       "manipulators": [
         {
           "type": "basic",
@@ -69,7 +41,8 @@
                 "command"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -77,35 +50,6 @@
             {
               "key_code": "down_arrow",
               "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Shift+Cmd+End to Shift+Cmd+Down: Select to document end",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "end",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "shift",
                 "command"
               ]
             }

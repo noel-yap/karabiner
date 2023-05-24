@@ -2,7 +2,7 @@
   "title": "Exit-related mappings",
   "rules": [
     {
-      "description": "Cmd+Opt+Insert to Ctrl+Cmd+q: Lock screen",
+      "description": "Cmd+Opt+Insert ↦ Ctrl+Cmd+q: Lock screen",
       "manipulators": [
         {
           "type": "basic",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "description": "Shift+Opt+Insert to Shift+Cmd+q: Log out",
+      "description": "Shift+Opt+Insert ↦ Shift+Cmd+q: Log out",
       "manipulators": [
         {
           "type": "basic",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "description": "Cmd+Opt+Delete to Ctrl+Cmd+Opt+Eject: Shutdown",
+      "description": "Cmd+Opt+Delete ↦ Ctrl+Cmd+Opt+Eject: Shutdown",
       "manipulators": [
         {
           "type": "basic",

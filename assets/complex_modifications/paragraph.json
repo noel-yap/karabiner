@@ -2,7 +2,7 @@
   "title": "Paragraph-related mappings",
   "rules": [
     {
-      "description": "Cmd+Up to Opt+Up",
+      "description": "Shift?+Cmd+Up ↦ Shift?+Opt+Up: Move/Select to paragraph start",
       "manipulators": [
         {
           "type": "basic",
@@ -13,7 +13,8 @@
                 "command"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -29,36 +30,7 @@
       ]
     },
     {
-      "description": "Shift+Cmd+Up to Shift+Opt+Up",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "up_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "shift",
-                "option"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Cmd+Down to Opt+Down",
+      "description": "Shift?+Cmd+Down ↦ Shift?+Opt+Down: Move/Select to paragraph end",
       "manipulators": [
         {
           "type": "basic",
@@ -69,7 +41,8 @@
                 "command"
               ],
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "shift"
               ]
             }
           },
@@ -77,35 +50,6 @@
             {
               "key_code": "down_arrow",
               "modifiers": [
-                "option"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Shift+Cmd+Down to Shift+Opt+Down",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "down_arrow",
-            "modifiers": {
-              "mandatory": [
-                "shift",
-                "command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "shift",
                 "option"
               ]
             }

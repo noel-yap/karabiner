@@ -88,6 +88,36 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Shift+Cmd+Opt+Delete ↦ Ctrl+Cmd+Opt+Eject: Reboot",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_forward",
+            "modifiers": {
+              "mandatory": [
+                "shift",
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "power",
+              "modifiers": [
+                "control",
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

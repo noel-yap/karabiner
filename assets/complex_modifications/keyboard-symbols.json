@@ -1,0 +1,141 @@
+{
+  "title": "Apple-keyboard-related mappings",
+  "rules": [
+    {
+      "description": "Shift+F15 ↦ ⇧",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f15",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "1",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "e",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "7",
+              "modifiers": ["left_option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Cmd+F15 ↦ ⌘",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f15",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "3",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "1",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "8",
+              "modifiers": ["left_option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+F15 ↦ ⌃",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f15",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "3",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "0",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "3",
+              "modifiers": ["left_option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Opt+F15 ↦ ⌥",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f15",
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "3",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "2",
+              "modifiers": ["left_option"]
+            },
+            {
+              "key_code": "5",
+              "modifiers": ["left_option"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,19 @@
 * <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⇞</kbd> moves to previous app
 * <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⇟</kbd> moves to next app
 
+### `desktop.json`
+
+> Below assumes a 3×3 desktop grid when using an external keyboard or a single row of desktops when using the internal keyboard
+
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>←</kbd> moves to left desktop with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>←</kbd> moves window to left desktop with wraparound
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>↑</kbd> moves to above desktop with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>↑</kbd> moves window to above desktop with wraparound
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>→</kbd> moves to right desktop with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>→</kbd> moves window to right desktop with wraparound
+* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>↓</kbd> moves to below desktop with wraparound
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>↓</kbd> moves window to below desktop with wraparound
+
 ### `document.json`
 
 * <kbd>⌘</kbd><kbd>⇱</kbd> moves to document start
@@ -58,17 +71,6 @@
 * <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↑</kbd> selects to paragraph start
 * <kbd>⌘</kbd><kbd>↓</kbd> moves to paragraph end
 * <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↓</kbd> selects to paragraph end
-
-### `space.json`
-
-* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>←</kbd> moves to left space with wraparound
-* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>←</kbd> moves window to left space with wraparound
-* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>↑</kbd> moves to above space with wraparound
-* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>↑</kbd> moves window to above space with wraparound
-* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>→</kbd> moves to right space with wraparound
-* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>→</kbd> moves window to right space with wraparound
-* <kbd>⌘</kbd><kbd>⎇</kbd><kbd>↓</kbd> moves to below space with wraparound
-* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>↓</kbd> moves window to below space with wraparound
 
 ### `tab.json`
 

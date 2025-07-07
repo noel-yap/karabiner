@@ -1,0 +1,3425 @@
+{
+  "title": "Desktop-related mappings",
+  "rules": [
+    {
+      "description": "Shift?+Cmd+Opt+KP7 ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_7",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP8 ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_8",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP9 ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_9",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP4 ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_4",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP5 ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_5",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP6 ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_6",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP1 ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_1",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP2 ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_2",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+KP3 ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_3",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+1 ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+2 ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+3 ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+4 ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+5 ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "5",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+6 ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "6",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+7 ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "7",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+8 ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "8",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shift?+Cmd+Opt+9 ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "9",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡1 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 1
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡1 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡2 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡3 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡4 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 4
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡4 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡5 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡6 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡7 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 7
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡7 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡8 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡9 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡1 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 1
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡1 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡2 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 2
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡2 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡3 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 3
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡3 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡4 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 4
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡4 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡5 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 5
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡5 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡6 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 6
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡6 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡7 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 7
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡7 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡8 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 8
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡8 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡9 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 9
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡9 ⋀ Shift?+Cmd+Opt+Up ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡1 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡2 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡3 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 3
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡3 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡4 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡5 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡6 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 6
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡6 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡7 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡8 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡9 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 9
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡9 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡1 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 1
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡1 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡2 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 2
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡2 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡3 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔4, Shift?+Cmd+Opt+4}: Moves/Window to Desktop 4 (middle-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 4
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 3
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡3 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡4 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔5, Shift?+Cmd+Opt+5}: Moves/Window to Desktop 5 (middle-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 5
+              }
+            },
+            {
+              "key_code": "5",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 4
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡4 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡5 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔6, Shift?+Cmd+Opt+6}: Moves/Window to Desktop 6 (middle-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 6
+              }
+            },
+            {
+              "key_code": "6",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 5
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡5 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡6 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔7, Shift?+Cmd+Opt+7}: Moves/Window to Desktop 7 (bottom-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 7
+              }
+            },
+            {
+              "key_code": "7",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 6
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡6 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡7 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔8, Shift?+Cmd+Opt+8}: Moves/Window to Desktop 8 (bottom-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 8
+              }
+            },
+            {
+              "key_code": "8",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 7
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡7 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡8 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 8
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡8 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔2, Shift?+Cmd+Opt+2}: Moves/Window to Desktop 2 (top-center screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 2
+              }
+            },
+            {
+              "key_code": "2",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "is_built_in_keyboard ⋀ desktop≡9 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 9
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡9 ⋀ Shift?+Cmd+Opt+Down ↦ {desktop≔3, Shift?+Cmd+Opt+3}: Moves/Window to Desktop 3 (top-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 3
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

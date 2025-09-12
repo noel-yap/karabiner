@@ -2,6 +2,139 @@
   "title": "Desktop-related mappings",
   "rules": [
     {
+      "description": "Cmd+Opt+KP0 ↦ {desktop≔0, Cmd+Opt+9, Cmd+Opt+Right}: Moves/Window to Full-Screened Window",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_0",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 0
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            },
+            {
+              "key_code": "left_command",
+              "hold_down_milliseconds": 250
+            },
+            {
+              "key_code": "left_option",
+              "hold_down_milliseconds": 250
+            },
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡0 ⋀ Shift?+Cmd+Opt+Left ↦ {desktop≔9, Shift?+Cmd+Opt+9}: Moves/Window to Desktop 9 (bottom-right screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 9
+              }
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "desktop≡0 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "desktop",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "1",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "desktop",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Shift?+Cmd+Opt+KP7 ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
       "manipulators": [
         {

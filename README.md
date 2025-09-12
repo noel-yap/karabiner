@@ -77,6 +77,13 @@
 * <kbd>⌘</kbd><kbd>⇞</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↑</kbd> moves to previous tab
 * <kbd>⌘</kbd><kbd>⇟</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↓</kbd> moves to next tab
 
+### `tile.json`
+
+* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>↑</kbd> tiles to top
+* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>→</kbd> tiles to right
+* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>↓</kbd> tiles to bottom
+* <kbd>⌃</kbd><kbd>⎇</kbd><kbd>←</kbd> tiles to left
+
 ### `window.json`
 
 * <kbd>⌃</kbd><kbd>⇞</kbd> moves to previous window
@@ -91,10 +98,8 @@
 
 ## Install
 
-1. `cd ~/.config && git clone git@github.com:noel-yap/karabiner.git`
-2. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/)
-3. Go to _Preferences_ -> _Complex Modifications_ inside _Karabiner_
-4. Press `Add rule` and add the rules
+1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/)
+2. `cd ~/.config && git clone git@github.com:noel-yap/karabiner.git`
 
 ## Helpful links
 

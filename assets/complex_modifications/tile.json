@@ -1,0 +1,121 @@
+{
+  "title": "Tile-related mappings",
+  "rules": [
+    {
+      "description": "Ctrl+Opt+Up ↦ Ctrl+Opt+KP8: Tile to top",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "keypad_8",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+Opt+Right ↦ Ctrl+Opt+KP6: Tile to right",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "keypad_6",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+Opt+Down ↦ Ctrl+Opt+KP2: Tile to bottom",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "keypad_2",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+Opt+Left ↦ Ctrl+Opt+KP4: Tile to left",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "keypad_4",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

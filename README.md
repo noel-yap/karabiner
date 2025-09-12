@@ -74,8 +74,8 @@
 
 ### `tab.json`
 
-* <kbd>⌘</kbd><kbd>⇞</kbd> moves to previous tab
-* <kbd>⌘</kbd><kbd>⇟</kbd> moves to next tab
+* <kbd>⌘</kbd><kbd>⇞</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↑</kbd> moves to previous tab
+* <kbd>⌘</kbd><kbd>⇟</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↓</kbd> moves to next tab
 
 ### `window.json`
 

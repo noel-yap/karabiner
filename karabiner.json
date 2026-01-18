@@ -5,97 +5,14 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Ctrl+Opt+Up ↦ Ctrl+Opt+KP8: Tile to top",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "up_arrow",
-                                    "modifiers": {
-                                        "mandatory": ["control", "option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "keypad_8",
-                                        "modifiers": ["control", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+Opt+Right ↦ Ctrl+Opt+KP6: Tile to right",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": ["control", "option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "keypad_6",
-                                        "modifiers": ["control", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+Opt+Down ↦ Ctrl+Opt+KP2: Tile to bottom",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "down_arrow",
-                                    "modifiers": {
-                                        "mandatory": ["control", "option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "keypad_2",
-                                        "modifiers": ["control", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+Opt+Left ↦ Ctrl+Opt+KP4: Tile to left",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": ["control", "option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "keypad_4",
-                                        "modifiers": ["control", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Cmd+PgUp ↦ Ctrl+PgUp: Move to previous tab",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.google\\.Chrome$",
+                                            "^org\\.torproject\\.torbrowser$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -118,13 +35,43 @@
                         ]
                     },
                     {
+                        "description": "Cmd+PgUp ↦ Ctrl+PgUp: Move to previous tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": {
+                                        "mandatory": ["command"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "[",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Fn+Cmd+Up ↦ Ctrl+PgUp: Move to previous tab",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.google\\.Chrome$",
+                                            "^org\\.torproject\\.torbrowser$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -147,13 +94,43 @@
                         ]
                     },
                     {
+                        "description": "Fn+Cmd+Up ↦ Ctrl+PgUp: Move to previous tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "fn"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "[",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Cmd+PgDn ↦ Ctrl+PgDn: Move to next tab",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.google\\.Chrome$",
+                                            "^org\\.torproject\\.torbrowser$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -176,13 +153,43 @@
                         ]
                     },
                     {
+                        "description": "Cmd+PgDn ↦ Ctrl+PgDn: Move to next tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": ["command"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "]",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Fn+Cmd+Down ↦ Ctrl+PgDn: Move to next tab",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.google\\.Chrome$",
+                                            "^org\\.torproject\\.torbrowser$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -205,32 +212,225 @@
                         ]
                     },
                     {
-                        "description": "desktop≡0 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
+                        "description": "Fn+Cmd+Down ↦ Ctrl+PgDn: Move to next tab",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "name": "desktop",
-                                        "type": "variable_if",
-                                        "value": 0
+                                        "bundle_identifiers": [
+                                            "^com\\.vivaldi\\.Vivaldi$"
+                                        ],
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "right_arrow",
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "fn"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "]",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift+F15 ↦ ⇧",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f15",
+                                    "modifiers": { "mandatory": ["shift"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "1",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "e",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "7",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+F15 ↦ ⌘",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f15",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "3",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "1",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "8",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+F15 ↦ ⌃",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f15",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "3",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "0",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "3",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Opt+F15 ↦ ⌥",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f15",
+                                    "modifiers": { "mandatory": ["option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "3",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": ["left_option"]
+                                    },
+                                    {
+                                        "key_code": "5",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Opt+PgUp ↦ Shift+Cmd+Tab: Move to previous application",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_up",
                                     "modifiers": {
                                         "mandatory": ["command", "option"],
-                                        "optional": ["caps_lock", "shift"]
+                                        "optional": ["caps_lock"]
                                     }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": ["shift", "command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Opt+PgDn ↦ Cmd+Tab: Move to next application",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Opt+KP0 ↦ {desktop≔0, Cmd+Opt+9, Cmd+Opt+Right}: Moves/Window to Full-Screened Window",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_0",
+                                    "modifiers": { "mandatory": ["command", "option"] }
                                 },
                                 "to": [
                                     {
                                         "set_variable": {
                                             "name": "desktop",
-                                            "value": 1
+                                            "value": 0
                                         }
                                     },
                                     {
-                                        "key_code": "1",
+                                        "key_code": "9",
+                                        "modifiers": ["command", "option"]
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 250,
+                                        "key_code": "left_command"
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 250,
+                                        "key_code": "left_option"
+                                    },
+                                    {
+                                        "key_code": "right_arrow",
                                         "modifiers": ["command", "option"]
                                     }
                                 ],
@@ -273,34 +473,32 @@
                         ]
                     },
                     {
-                        "description": "Cmd+Opt+KP0 ↦ {desktop≔0, Cmd+Opt+9, Cmd+Opt+Right}: Moves/Window to Full-Screened Window",
+                        "description": "desktop≡0 ⋀ Shift?+Cmd+Opt+Right ↦ {desktop≔1, Shift?+Cmd+Opt+1}: Moves/Window to Desktop 1 (top-left screen on 3×3 grid)",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "name": "desktop",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "keypad_0",
-                                    "modifiers": { "mandatory": ["command", "option"] }
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
                                 },
                                 "to": [
                                     {
                                         "set_variable": {
                                             "name": "desktop",
-                                            "value": 0
+                                            "value": 1
                                         }
                                     },
                                     {
-                                        "key_code": "9",
-                                        "modifiers": ["command", "option"]
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 250,
-                                        "key_code": "left_command"
-                                    },
-                                    {
-                                        "hold_down_milliseconds": 250,
-                                        "key_code": "left_option"
-                                    },
-                                    {
-                                        "key_code": "right_arrow",
+                                        "key_code": "1",
                                         "modifiers": ["command", "option"]
                                     }
                                 ],
@@ -2931,168 +3129,6 @@
                         ]
                     },
                     {
-                        "description": "Shift+F15 ↦ ⇧",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f15",
-                                    "modifiers": { "mandatory": ["shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "2",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "1",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "e",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "7",
-                                        "modifiers": ["left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+F15 ↦ ⌘",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f15",
-                                    "modifiers": { "mandatory": ["command"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "2",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "3",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "1",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "8",
-                                        "modifiers": ["left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+F15 ↦ ⌃",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f15",
-                                    "modifiers": { "mandatory": ["control"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "2",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "3",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "0",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "3",
-                                        "modifiers": ["left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Opt+F15 ↦ ⌥",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f15",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "2",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "3",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "2",
-                                        "modifiers": ["left_option"]
-                                    },
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": ["left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Opt+PgUp ↦ Shift+Cmd+Tab: Move to previous application",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "page_up",
-                                    "modifiers": {
-                                        "mandatory": ["command", "option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": ["shift", "command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+Opt+PgDn ↦ Cmd+Tab: Move to next application",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "page_down",
-                                    "modifiers": {
-                                        "mandatory": ["command", "option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": ["command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Shift?+Cmd+Home ↦ Shift?+Cmd+Up: Move/Select to document start",
                         "manipulators": [
                             {
@@ -3127,6 +3163,54 @@
                                 "to": [
                                     {
                                         "key_code": "down_arrow",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "MouseButton1 ↦ Cmd+c: Copy",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": { "optional": ["caps_lock"] },
+                                    "pointing_button": "button1"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                },
+                                "to_after_key_up": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "pointing_button": "button1"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "pointing_button": "button1" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+MouseButton3 ↦ Shift?+Cmd+v: Paste/Pasteboard",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": { "optional": ["caps_lock", "shift"] },
+                                    "pointing_button": "button3"
+                                },
+                                "to": [
+                                    { "pointing_button": "button1" },
+                                    {
+                                        "key_code": "v",
                                         "modifiers": ["command"]
                                     }
                                 ],
@@ -3494,6 +3578,1699 @@
                                     {
                                         "key_code": "down_arrow",
                                         "modifiers": ["option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Opt+0 ↦ {space≔0, Cmd+Opt+3, Ctrl+Cmd+Opt+→}: Moves to fullscreen space",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_0",
+                                    "modifiers": { "mandatory": ["command", "option"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "hold_down_milliseconds": 375,
+                                        "key_code": "keypad_3",
+                                        "modifiers": ["command", "option"]
+                                    },
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": ["control", "command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift+Cmd+Opt+0 ↦ {space≔0, Ctrl+Cmd+F }: Toggle fullscreen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_0",
+                                    "modifiers": { "mandatory": ["shift", "command", "option"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f",
+                                        "modifiers": ["control", "command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+8 ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_8",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 8
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_8",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+9 ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_9",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 9
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_9",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+4 ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_4",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 4
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_4",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+5 ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_5",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 5
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_5",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+6 ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_6",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 6
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_6",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+1 ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_1",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_1",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+2 ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_2",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 2
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_2",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift?+Cmd+Opt+3 ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "keypad_3",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 3
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_3",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 7
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 9
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_9",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 8
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 7
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_7",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 9
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 8
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_8",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 4
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 6
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_6",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 5
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 4
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_4",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 6
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 5
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_5",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 3
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_3",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 2
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_1",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Left ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 3
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 2
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_2",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 7
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_1",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 8
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 2
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_2",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 9
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 3
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_3",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 4
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 7
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_7",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 5
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 8
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_8",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 6
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 9
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_9",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 4
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_4",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 2
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 5
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_5",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Up ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 3
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 6
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_6",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 7
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 8
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_8",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 8
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 9
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_9",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 9
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 7
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_7",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 4
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 5
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_5",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 5
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 6
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_6",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 6
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 4
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_4",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 2
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_2",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 2
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 3
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_3",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Right ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 3
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_1",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡7 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔4, Shift?+Cmd+Opt+4}: Moves/Window to middle-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 7
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 4
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_4",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡8 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔5, Shift?+Cmd+Opt+5}: Moves/Window to middle-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 8
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 5
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_5",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡9 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔6, Shift?+Cmd+Opt+6}: Moves/Window to middle-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 9
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 6
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_6",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡4 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔1, Shift?+Cmd+Opt+1}: Moves/Window to bottom-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 4
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_1",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡5 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔2, Shift?+Cmd+Opt+2}: Moves/Window to bottom-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 5
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 2
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_2",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡6 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔3, Shift?+Cmd+Opt+3}: Moves/Window to bottom-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 6
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 3
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_3",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡1 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔7, Shift?+Cmd+Opt+7}: Moves/Window to top-left screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 7
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_7",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡2 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔8, Shift?+Cmd+Opt+8}: Moves/Window to top-center screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 2
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 8
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_8",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "space≡3 ⋀ Shift?+Cmd+Opt+Down ↦ {space≔9, Shift?+Cmd+Opt+9}: Moves/Window to top-right screen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "space",
+                                        "type": "variable_if",
+                                        "value": 3
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["caps_lock", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 9
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_9",
+                                        "modifiers": ["command", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+PgUp ↦ Ctrl+PgUp: Move to previous tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": {
+                                        "mandatory": ["command"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn+Cmd+Up ↦ Ctrl+PgUp: Move to previous tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "fn"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+PgDn ↦ Ctrl+PgDn: Move to next tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": {
+                                        "mandatory": ["command"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_down",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn+Cmd+Down ↦ Ctrl+PgDn: Move to next tab",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["command", "fn"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_down",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+Opt+Up ↦ Ctrl+Opt+KP8: Tile to top",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["control", "option"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "keypad_8",
+                                        "modifiers": ["control", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+Opt+Right ↦ Ctrl+Opt+KP6: Tile to right",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["control", "option"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "keypad_6",
+                                        "modifiers": ["control", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+Opt+Down ↦ Ctrl+Opt+KP2: Tile to bottom",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["control", "option"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "keypad_2",
+                                        "modifiers": ["control", "option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+Opt+Left ↦ Ctrl+Opt+KP4: Tile to left",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["control", "option"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "keypad_4",
+                                        "modifiers": ["control", "option"]
                                     }
                                 ],
                                 "type": "basic"

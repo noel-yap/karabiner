@@ -15,6 +15,11 @@
 * <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⇞</kbd> moves to previous app
 * <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⇟</kbd> moves to next app
 
+### `browser.json`
+
+* <kbd>⌘</kbd><kbd>⇞</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↑</kbd> moves to previous tab
+* <kbd>⌘</kbd><kbd>⇟</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↓</kbd> moves to next tab
+
 ### `desktop.json`
 
 > Below assumes a 3×3 desktop grid when using an external keyboard or a single row of desktops when using the internal keyboard
@@ -71,11 +76,6 @@
 * <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↑</kbd> selects to paragraph start
 * <kbd>⌘</kbd><kbd>↓</kbd> moves to paragraph end
 * <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↓</kbd> selects to paragraph end
-
-### `tab.json`
-
-* <kbd>⌘</kbd><kbd>⇞</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↑</kbd> moves to previous tab
-* <kbd>⌘</kbd><kbd>⇟</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↓</kbd> moves to next tab
 
 ### `tile.json`
 

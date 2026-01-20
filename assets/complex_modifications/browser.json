@@ -10,6 +10,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^ai\\.perplexity\\.comet$",
                 "^com\\.google\\.Chrome$",
                 "^org\\.torproject\\.torbrowser$"
               ]
@@ -82,6 +83,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^ai\\.perplexity\\.comet$",
                 "^com\\.google\\.Chrome$",
                 "^org\\.torproject\\.torbrowser$"
               ]
@@ -156,6 +158,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^ai\\.perplexity\\.comet$",
                 "^com\\.google\\.Chrome$",
                 "^org\\.torproject\\.torbrowser$"
               ]
@@ -228,6 +231,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^ai\\.perplexity\\.comet$",
                 "^com\\.google\\.Chrome$",
                 "^org\\.torproject\\.torbrowser$"
               ]

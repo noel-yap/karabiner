@@ -2,12 +2,12 @@
   "title": "Apple-keyboard-related mappings",
   "rules": [
     {
-      "description": "Shift+F15 ↦ ⇧",
+      "description": "Shift+F20 ↦ ⇧",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f15",
+            "key_code": "f20",
             "modifiers": {
               "mandatory": [
                 "shift"
@@ -36,12 +36,12 @@
       ]
     },
     {
-      "description": "Cmd+F15 ↦ ⌘",
+      "description": "Cmd+F20 ↦ ⌘",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f15",
+            "key_code": "f20",
             "modifiers": {
               "mandatory": [
                 "command"
@@ -70,12 +70,12 @@
       ]
     },
     {
-      "description": "Ctrl+F15 ↦ ⌃",
+      "description": "Ctrl+F20 ↦ ⌃",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f15",
+            "key_code": "f20",
             "modifiers": {
               "mandatory": [
                 "control"
@@ -104,12 +104,12 @@
       ]
     },
     {
-      "description": "Opt+F15 ↦ ⌥",
+      "description": "Opt+F20 ↦ ⌥",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f15",
+            "key_code": "f20",
             "modifiers": {
               "mandatory": [
                 "option"

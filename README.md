@@ -19,6 +19,8 @@
 
 * <kbd>⌘</kbd><kbd>⇞</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↑</kbd> moves to previous tab
 * <kbd>⌘</kbd><kbd>⇟</kbd> or <kbd>🌐</kbd><kbd>⌘</kbd><kbd>↓</kbd> moves to next tab
+* <kbd>⌘</kbd><kbd>⌫</kbd> deletes to word start
+* <kbd>⌘</kbd><kbd>⌦</kbd> deletes to word end
 
 ### `desktop.json`
 
@@ -95,6 +97,8 @@
 * <kbd>⇧</kbd><kbd>⌘</kbd><kbd>←</kbd> selects to word start
 * <kbd>⌘</kbd><kbd>→</kbd> moves to word end
 * <kbd>⇧</kbd><kbd>⌘</kbd><kbd>→</kbd> selects to word end
+* <kbd>⌘</kbd><kbd>⌫</kbd> deletes to word start
+* <kbd>⌘</kbd><kbd>⌦</kbd> deletes to word end
 
 ## Install
 

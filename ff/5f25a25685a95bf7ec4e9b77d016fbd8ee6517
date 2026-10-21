@@ -1,0 +1,14 @@
+karabiner.json
+  h_c58334d516af27 5682
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ff5f25a25685a95bf7ec4e9b77d016fbd8ee6517",
+  "prompts": {},
+  "humans": {
+    "h_c58334d516af27": {
+      "author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    }
+  }
+}

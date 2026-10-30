@@ -1,0 +1,28 @@
+README.md
+  s_bbc41e44d35284::t_9414bdfb3f1973 57-60
+assets/complex_modifications/idea.json
+  h_c58334d516af27 1-46
+karabiner.json
+  h_c58334d516af27 7-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "aad668cc3bed0eb7d7a6d1b74246752195772dd5",
+  "prompts": {},
+  "humans": {
+    "h_c58334d516af27": {
+      "author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_bbc41e44d35284": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1dedf237-a330-4c4e-bab3-f71fe64e54b9",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    }
+  }
+}

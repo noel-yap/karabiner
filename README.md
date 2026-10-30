@@ -54,6 +54,10 @@
 * <kbd>⇧</kbd><kbd>⎇</kbd><kbd>⎀</kbd> logs out
 * <kbd>⌘</kbd><kbd>⎇</kbd><kbd>⌦</kbd> shuts down
 
+### `idea.json`
+
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>KP0</kbd> toggles fullscreen in IntelliJ IDEA
+
 ### `line.json`
 
 * <kbd>⇱</kbd> moves to line start

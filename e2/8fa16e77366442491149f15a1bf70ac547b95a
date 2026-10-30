@@ -1,0 +1,34 @@
+assets/complex_modifications/zoom.json
+  s_45098a54e62d1b::t_e8ed9743dd43b9 1-46
+README.md
+  s_04ac77fdd62f0a::t_78c47c41ffa8eb 103-106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e28fa16e77366442491149f15a1bf70ac547b95a",
+  "prompts": {},
+  "humans": {
+    "h_c58334d516af27": {
+      "author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_04ac77fdd62f0a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b5e207ce-eadf-4d9a-89ca-efac87cb3a26",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    },
+    "s_45098a54e62d1b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ce137e46-deb5-49b4-a84e-096d3c711436",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    }
+  }
+}

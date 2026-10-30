@@ -100,6 +100,10 @@
 * <kbd>⌘</kbd><kbd>⌫</kbd> deletes to word start
 * <kbd>⌘</kbd><kbd>⌦</kbd> deletes to word end
 
+### `zoom.json`
+
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>⎇</kbd><kbd>KP0</kbd> toggles fullscreen in Zoom
+
 ## Install
 
 1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/)

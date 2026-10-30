@@ -5,6 +5,38 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Zoom ⋀ Shift+Cmd+Opt+KP0 ↦ {space≔0, Shift+Cmd+F}: Toggle fullscreen",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^us\\.zoom\\.xos$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "keypad_0",
+                                    "modifiers": { "mandatory": ["shift", "command", "option"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "space",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f",
+                                        "modifiers": ["shift", "command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Shift+F20 ↦ ⇧",
                         "manipulators": [
                             {

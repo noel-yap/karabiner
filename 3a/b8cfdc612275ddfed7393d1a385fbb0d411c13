@@ -1,0 +1,42 @@
+assets/complex_modifications/idea.json
+  s_0f2edf6b4aa211::t_cf11fd571c4696 5,30
+karabiner.json
+  s_45098a54e62d1b::t_ea138aefa0cc3c 3859,3864,3871-3872,3885,3892-3893,3898,3917,3920-3921,3923,3943,3951,3955,3957,3964,3993,4026-4027,4042,4048,4063,4069,4117,4189,4210-4211,4216-4217,4221,4225-4226,4229-4230,4233
+  s_0f2edf6b4aa211::t_22715110ee42fd 8,26,40,58,3876,3914,3948,4020
+  s_04ac77fdd62f0a::t_7dc720a8a11ebb 3888,3926,4103,4143,4164,4185,4206
+  s_0f2edf6b4aa211::t_e97dcc6febaf53 3856,3860-3863,3865-3866,3868-3870,3877,3889-3891,3894-3895,3897,3899-3901,3905-3906,3918-3919,3922,3924,3928-3929,3934-3935,3946-3947,3949-3950,3952-3953,3958,3963,3972,3976,3978-3979,3984-3985,3997,3999-4000,4005-4006,4014,4018,4021,4035,4039,4041,4047,4056,4060,4062,4068,4077,4081,4083-4084,4089-4090,4098,4104,4110,4116,4125,4130-4131,4135,4137,4144,4152,4157-4158,4162,4165,4170-4171,4179,4184,4191-4192,4197-4198
+assets/complex_modifications/zoom.json
+  s_0f2edf6b4aa211::t_cf11fd571c4696 5,30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3ab8cfdc612275ddfed7393d1a385fbb0d411c13",
+  "prompts": {},
+  "sessions": {
+    "s_04ac77fdd62f0a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b5e207ce-eadf-4d9a-89ca-efac87cb3a26",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    },
+    "s_0f2edf6b4aa211": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "741ad5a7-4ac6-40c6-a950-d1fa0f48acf9",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    },
+    "s_45098a54e62d1b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ce137e46-deb5-49b4-a84e-096d3c711436",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Noel Yap <noel.yap+github.com@gmail.com>"
+    }
+  }
+}

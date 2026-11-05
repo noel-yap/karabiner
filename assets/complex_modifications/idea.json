@@ -2,7 +2,7 @@
   "title": "IDEA-related mappings",
   "rules": [
     {
-      "description": "IntelliJ IDEA ⋀ Shift+Cmd+Opt+KP0 ↦ {space≔0, Ctrl+Cmd+F}: Toggle fullscreen",
+      "description": "IntelliJ IDEA ⋀ Shift+Cmd+Opt+KP0 ↦ {desktop≔0, Ctrl+Cmd+F}: Toggle fullscreen",
       "manipulators": [
         {
           "type": "basic",
@@ -27,7 +27,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "space",
+                "name": "desktop",
                 "value": 0
               }
             },

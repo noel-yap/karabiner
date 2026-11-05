@@ -2,7 +2,7 @@
   "title": "Zoom-related mappings",
   "rules": [
     {
-      "description": "Zoom ⋀ Shift+Cmd+Opt+KP0 ↦ {space≔0, Shift+Cmd+F}: Toggle fullscreen",
+      "description": "Zoom ⋀ Shift+Cmd+Opt+KP0 ↦ {desktop≔0, Shift+Cmd+F}: Toggle fullscreen",
       "manipulators": [
         {
           "type": "basic",
@@ -27,7 +27,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "space",
+                "name": "desktop",
                 "value": 0
               }
             },

@@ -1,0 +1,77 @@
+{
+  "title": "Linear-related mappings",
+  "rules": [
+    {
+      "description": "Linear ⋀ Cmd+PgUp ↦ Shift+Cmd+[: Move to previous tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.linear$"
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "page_up",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Linear ⋀ Cmd+PgDn ↦ Shift+Cmd+]: Move to next tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.linear$"
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "page_down",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
